@@ -16,12 +16,95 @@
   <link rel="stylesheet" href="/styles.css">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4V3670N3F"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJW1QWC1S5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-X4V3670N3F');
+    gtag('config', 'G-WJW1QWC1S5');
+  </script>
+
+  <!-- Schema.org Product + Offers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "GO by MKDSCPLS — Mission Trip Management Software",
+    "description": "Mission trip management software for churches. Online donations with zero platform fees, task management, e-signatures, budgets, and team discipleship.",
+    "image": "https://www.mkdscpls.com/images/go-og-default-v6.jpg",
+    "brand": { "@type": "Brand", "name": "MKDSCPLS" },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Free",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://go.mkdscpls.com/get-started"
+      },
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "price": "9",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://go.mkdscpls.com/get-started"
+      },
+      {
+        "@type": "Offer",
+        "name": "Ministry",
+        "price": "39",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://go.mkdscpls.com/get-started"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are there platform fees on donations?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. GO charges zero platform fees on donations on every plan — Free, Starter, and Ministry. You only pay Stripe's standard processing: 2.9% + $0.30 for cards, or 0.8% capped at $5 for ACH bank transfers. Donors can choose to cover the fee so your team receives the full amount." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free trial?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Free plan is not a trial — it is free forever. It covers up to 5 active trips with task checklists, manual payment tracking, and help center access with no credit card required and no time limit. When you need online donations or e-signatures, you can upgrade to Starter ($9/month) or Ministry ($39/month)." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the free plan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Up to 5 active trips, basic task checklists, manual payment tracking (record cash and checks without online donations), 250 MB storage per trip, and help center access. Free plan users can manage participants, assign tasks, build itineraries, and track fundraising manually — enough for a church running one or two trips a year." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch plans?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Upgrade or downgrade anytime. Start on Free, move to Starter when you want online donations, move to Ministry when you want unlimited trips and e-signatures. No contracts, no cancellation fees." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there church-size limits or participant caps?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Plans are limited by number of active trips and storage, not by church size or participant count. A 100-person church and a 10,000-person church pay the same price for the same plan. Unlimited participants per trip on all plans." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer nonprofit discounts?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pricing is already structured for churches and ministries — there is no nonprofit discount because the Free plan covers most small churches and the paid plans are priced below comparable church software. If you are a church plant or a ministry with financial hardship, reach out and we will work something out." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a contract or commitment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No contracts. Monthly plans can be cancelled anytime. Yearly plans are billed annually with a 17% discount and can also be cancelled, though refunds on annual plans are prorated." }
+      }
+    ]
+  }
   </script>
 </head>
 <body>
@@ -51,6 +134,20 @@
     <div class="container">
       <h1>Simple, Transparent Pricing</h1>
       <p>Start free. Upgrade when you need more. Zero platform fees on every donation, every plan.</p>
+    </div>
+  </section>
+
+  <!-- Intro / Pricing Philosophy -->
+  <section class="section" style="padding-top: 24px; padding-bottom: 16px;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+          Church software pricing is often designed to confuse — setup fees, per-user charges, mandatory support packages, platform fees that quietly skim 2-3% off every donation. We wanted the opposite: three plans, clear limits, no fees on donations, cancel anytime.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+          If your church is running one or two trips a year and you are fine collecting checks by hand, the <strong>Free plan</strong> actually covers that. If you want to accept online donations and collect digital signatures, <strong>Starter</strong> is $9/month. If you are running an active missions program with multiple trips a year, <strong>Ministry</strong> is $39/month. That is the entire decision tree.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -115,28 +212,155 @@
 
       </div>
 
-      <!-- FAQ-style note -->
-      <div style="max-width: 700px; margin: 48px auto 0; text-align: center;">
-        <h3 style="font-size: 1.1rem; margin-bottom: 8px;">What about payment processing fees?</h3>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-          GO charges <strong>zero platform fees</strong> on donations. You only pay Stripe's standard processing: 2.9% + $0.30 for cards, or 0.8% (capped at $5) for ACH bank transfers. Donors can choose to cover the fee so your team receives the full amount.
-        </p>
+    </div>
+  </section>
+
+  <!-- What You Actually Get on Free -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>What You Actually Get on the Free Plan</h2>
+        <p>Free is not a trial. It is a full working plan for churches running one or two trips a year.</p>
       </div>
 
-      <div style="max-width: 700px; margin: 32px auto 0; text-align: center;">
-        <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Can I switch plans?</h3>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-          Yes. Upgrade or downgrade anytime. Start free, and when you need online donations or e-signatures, move to Starter or Ministry.
+      <div style="max-width: 800px; margin: 0 auto;">
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+          Most "free" software is a time-limited trial or a stripped-down preview designed to push you to upgrade. GO's Free plan is a real plan. No credit card. No 30-day countdown. No locked features hidden behind a paywall you hit on day one.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+          On the Free plan you can create up to <strong>5 active trips</strong>, build full task checklists across 8 categories, manage participants and applications, assign tasks to individuals or the whole team, track fundraising manually by recording cash and check payments, build day-by-day itineraries, and keep everything in 250 MB of storage per trip. The help center is open to you forever.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+          What the Free plan <em>doesn't</em> include: online donation processing, e-signatures, and automated reminders. If you are collecting checks by hand and printing waivers, the Free plan is enough. When you want Stripe donations and digital signatures, move up to Starter.
         </p>
       </div>
+    </div>
+  </section>
 
-      <div style="max-width: 700px; margin: 32px auto 0; text-align: center;">
-        <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Is there a contract?</h3>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-          No contracts. Monthly plans can be cancelled anytime. Yearly plans are billed annually with a 17% discount.
-        </p>
+  <!-- Which Plan Is Right for You -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Which Plan Is Right for You?</h2>
+        <p>A quick self-check to help you choose.</p>
       </div>
 
+      <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        <div class="feature-card">
+          <h3>Free is right for you if...</h3>
+          <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px; margin-top: 12px;">
+            <li>You run 1-2 trips per year</li>
+            <li>Most of your donations come as checks or cash</li>
+            <li>You are fine printing waivers and collecting paper signatures</li>
+            <li>You want to try the platform without any commitment</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Starter is right for you if...</h3>
+          <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px; margin-top: 12px;">
+            <li>You want to accept online donations with zero platform fees</li>
+            <li>You need at least one e-signature document (typically a waiver)</li>
+            <li>You run a handful of trips per year</li>
+            <li>You want automated task reminders</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Ministry is right for you if...</h3>
+          <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px; margin-top: 12px;">
+            <li>You run an active missions program with multiple trips a year</li>
+            <li>You need unlimited e-signatures (waivers, medical forms, agreements)</li>
+            <li>You want advanced task management and a photo gallery</li>
+            <li>You want priority support with a 24-hour response time</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&utm_medium=organic&utm_campaign=pricing&utm_content=which_plan_cta" class="hero-cta" style="font-size: 0.95rem; padding: 12px 28px;">
+          Start Free &rarr;
+        </a>
+        <div style="margin-top: 12px; font-size: 0.9rem;">
+          <a href="/features" style="color: var(--text-muted);">See the full feature breakdown &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Keep It Free -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Keep It Free</h2>
+        <p>Transparency on where the money comes from and where it doesn't.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+          <strong>We do not charge platform fees on donations.</strong> A lot of church software platforms tack on an extra 1-3% on top of Stripe fees — on a $100,000 trip fundraising year, that is $1,000-$3,000 taken out of the mission. We refuse to do that. Every dollar a donor gives minus the Stripe processing goes to your team. That is non-negotiable for us.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+          <strong>We use Stripe Connect.</strong> Donations go directly from the donor to your church's Stripe account — not through us. We never touch your donation money. This is more secure, cleaner for your accounting, and it means we cannot take a cut even if we wanted to.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+          <strong>Paid tiers fund the platform.</strong> Ministry plans at $39/month and Starter plans at $9/month pay for the servers, the developers, the customer support, and the features we keep adding. Churches that need more get more and pay for it. Churches that only need the basics pay nothing. That is the model.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pricing FAQs</h2>
+      </div>
+
+      <div style="max-width: 750px; margin: 0 auto;">
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Are there platform fees on donations?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">No. GO charges zero platform fees on donations on every plan — Free, Starter, and Ministry. You only pay Stripe's standard processing: 2.9% + $0.30 for cards, or 0.8% capped at $5 for ACH bank transfers. Donors can choose to cover the fee so your team receives the full amount.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Is there a free trial?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">The Free plan is not a trial — it is free forever. It covers up to 5 active trips with task checklists, manual payment tracking, and help center access with no credit card required and no time limit. When you need online donations or e-signatures, you can upgrade to Starter ($9/month) or Ministry ($39/month).</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">What is included in the free plan?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Up to 5 active trips, basic task checklists, manual payment tracking (record cash and checks without online donations), 250 MB storage per trip, and help center access. Free plan users can manage participants, assign tasks, build itineraries, and track fundraising manually — enough for a church running one or two trips a year.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Can I switch plans?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Yes. Upgrade or downgrade anytime. Start on Free, move to Starter when you want online donations, move to Ministry when you want unlimited trips and e-signatures. No contracts, no cancellation fees.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Are there church-size limits or participant caps?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">No. Plans are limited by number of active trips and storage, not by church size or participant count. A 100-person church and a 10,000-person church pay the same price for the same plan. Unlimited participants per trip on all plans.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Do you offer nonprofit discounts?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Pricing is already structured for churches and ministries — there is no separate nonprofit discount because the Free plan covers most small churches and the paid plans are priced below comparable church software. If you are a church plant or a ministry with financial hardship, reach out and we will work something out.</p>
+        </div>
+        <div style="padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Is there a contract or commitment?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">No contracts. Monthly plans can be cancelled anytime. Yearly plans are billed annually with a 17% discount and can also be cancelled, though refunds on annual plans are prorated.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">Still have questions?</p>
+        <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&utm_medium=organic&utm_campaign=pricing&utm_content=faq_cta" class="hero-cta" style="font-size: 0.95rem; padding: 12px 28px;">
+          Try GO Free &rarr;
+        </a>
+        <div style="margin-top: 16px; font-size: 0.9rem;">
+          <a href="/features" style="color: var(--text-muted); margin: 0 8px;">Features</a>
+          &middot;
+          <a href="/compare" style="color: var(--text-muted); margin: 0 8px;">Compare</a>
+          &middot;
+          <a href="/checklist" style="color: var(--text-muted); margin: 0 8px;">Checklist</a>
+          &middot;
+          <a href="/budget" style="color: var(--text-muted); margin: 0 8px;">Budget guide</a>
+        </div>
+      </div>
     </div>
   </section>
 
