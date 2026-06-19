@@ -1,0 +1,22 @@
+# Mission Trip Planning Software for Churches
+
+> Free mission trip planning and management software for churches and ministries — plan trips, run fundraising, track donors, collect applications and e-signatures, and manage budgets, with no platform fees. Powered by GO by MKDSCPLS.
+
+This site helps church missions teams and trip leaders plan and manage short-term mission trips. The software itself is GO by MKDSCPLS; get started for free at https://go.mkdscpls.com/get-started.
+
+## Core pages
+- [Home](https://missiontripplanning.com/): What mission trip planning software does and why it's free.
+- [Features](https://missiontripplanning.com/features): Trip management, fundraising, donor tracking, applications, e-signatures.
+- [Pricing](https://missiontripplanning.com/pricing): Free to use — no platform fees.
+- [Compare](https://missiontripplanning.com/compare): How it compares to other mission trip management tools.
+
+## Guides
+- [How to plan a mission trip](https://missiontripplanning.com/how-to-plan-a-mission-trip): Step-by-step planning guide for churches.
+- [Mission trip checklist](https://missiontripplanning.com/checklist): What to prepare before a short-term mission trip.
+- [Mission trip budget](https://missiontripplanning.com/budget): How to estimate and manage mission trip costs.
+
+## Get started
+- [Start free](https://go.mkdscpls.com/get-started): Create your church's mission trip on GO by MKDSCPLS.
+
+## About
+Operated by Make Disciples Ministries. Contact: support@mkdscpls.com
