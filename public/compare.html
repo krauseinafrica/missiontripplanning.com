@@ -224,28 +224,48 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/site-chrome.css?v=20260913a">
+  <style>
+    /* GO's palette, driven through the shared chrome's custom properties. */
+    :root {
+      --sc-brand: #00875A;
+      --sc-brand-dark: #006644;
+      --sc-accent: #00875A;
+      --sc-accent-ink: #ffffff;
+      --sc-footer-bg: #0d1117;
+    }
+    .sc-brand-tile {
+      width: 30px; height: 30px; flex: 0 0 30px;
+      background: var(--sc-brand); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.02em;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Nav -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo">
-        <div class="logo-icon">GO</div>
-        MissionTripPlanning
+  <!-- Shared marketing chrome. Same definition as startdiscipling.com. -->
+  <header class="sc-header">
+    <div class="sc-header-inner">
+      <a href="/" class="sc-brand">
+        <span class="sc-brand-tile" aria-hidden="true">GO</span>
+        <span>MissionTripPlanning</span>
       </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <nav class="sc-nav" id="scNav">
+        <a href="/" class="sc-navlink">Home</a>
+        <a href="/features" class="sc-navlink">Features</a>
+        <a href="/pricing" class="sc-navlink">Pricing</a>
+        <a href="/how-to-plan-a-mission-trip" class="sc-navlink">Guides</a>
+        <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=nav_blog" class="sc-navlink">Blog</a>
+        <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=nav_login" class="sc-login">Sign In</a>
+        <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=nav_cta" class="sc-cta">Get Started</a>
+      </nav>
+      <button type="button" class="sc-burger" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/features">Features</a></li>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&utm_medium=website&utm_campaign=go_landing&utm_content=nav_blog">Blog</a></li>
-        <li><a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&utm_medium=website&utm_campaign=go_landing&utm_content=nav_cta" class="nav-cta">Get Started Free</a></li>
-      </ul>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero -->
   <section class="hero" style="padding-bottom: 40px;">
@@ -486,37 +506,43 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="nav-logo">
-          <div class="logo-icon">GO</div>
-          MissionTripPlanning
+  <footer class="sc-footer">
+    <div class="sc-footer-inner">
+      <div class="sc-footer-brand">
+        <a href="/" class="sc-footer-mark">
+          <span class="sc-brand-tile" aria-hidden="true">GO</span>
+          <span>MissionTripPlanning</span>
+        </a>
+        <p>Mission trip planning software built for churches. A product of <a href="https://go.mkdscpls.com?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=footer_brand" class="sc-flink">GO by MKDSCPLS</a>.</p>
+      </div>
+      <div class="sc-footer-cols">
+        <div class="sc-footer-col">
+          <h4>Product</h4>
+          <a href="/features" class="sc-flink">Features</a>
+          <a href="/pricing" class="sc-flink">Pricing</a>
+          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
-        <p>Mission trip planning software built for churches. A product of <a href="https://go.mkdscpls.com?utm_source=missiontripplanning&utm_medium=website&utm_campaign=go_landing&utm_content=footer_brand" style="color: var(--go-green);">GO by MKDSCPLS</a>.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Product</h4>
-        <a href="/features">Features</a>
-        <a href="/pricing">Pricing</a>
-        <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&utm_medium=website&utm_campaign=go_landing&utm_content=footer_blog">Blog</a>
-      </div>
-      <div class="footer-links">
-        <h4>Resources</h4>
-        <a href="/checklist">Planning Checklist</a>
-        <a href="/budget">Budget Guide</a>
-        <a href="/compare">Software Comparison</a>
-      </div>
-      <div class="footer-links">
-        <h4>Get Started</h4>
-        <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&utm_medium=website&utm_campaign=go_landing&utm_content=footer_getstarted">Create Account</a>
-        <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&utm_medium=website&utm_campaign=go_landing&utm_content=footer_login">Sign In</a>
+        <div class="sc-footer-col">
+          <h4>Guides</h4>
+          <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/checklist" class="sc-flink">Planning checklist</a>
+          <a href="/budget" class="sc-flink">Budget guide</a>
+          <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
+          <a href="/mission-trip-packing-list" class="sc-flink">Packing list</a>
+        </div>
+        <div class="sc-footer-col">
+          <h4>Get started</h4>
+          <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
+          <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=website&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      &copy; 2026 GO by MKDSCPLS. All rights reserved.
+    <div class="sc-footer-base">
+      <p>&copy; 2026 GO by MKDSCPLS. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="/site-chrome.js?v=20260913a"></script>
 </body>
 </html>
