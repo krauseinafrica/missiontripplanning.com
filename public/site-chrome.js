@@ -5,6 +5,7 @@
  * so it cannot link the original. Re-copy both site-chrome files when the
  * shared chrome changes.
  */
+
 /**
  * site-chrome.js — behaviour for the shared marketing header.
  *
@@ -127,6 +128,15 @@
       '<symbol id="sc-cross" viewBox="0 0 24 24"><path d="M12 3.2v17.6M7.4 8.4h9.2"/></symbol>' +
       '<symbol id="sc-pray" viewBox="0 0 24 24"><path d="M9.6 20.4V15a4.8 4.8 0 0 1 1.4-3.4l4.2-4.2a1.7 1.7 0 0 1 2.4 2.4l-2.8 2.8"/><path d="M14.4 20.4V15a4.8 4.8 0 0 0-1.4-3.4L8.8 7.4a1.7 1.7 0 0 0-2.4 2.4l2.8 2.8"/><path d="M7.4 20.4h9.2"/></symbol>' +
       '<symbol id="sc-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8"/><path d="M3.4 12h17.2"/><path d="M12 3.2a13.4 13.4 0 0 1 0 17.6 13.4 13.4 0 0 1 0-17.6Z"/></symbol>' +
+      '<symbol id="sc-users" viewBox="0 0 24 24"><circle cx="9" cy="8.4" r="3.4"/><path d="M3.4 19.6a5.8 5.8 0 0 1 11.2 0"/><path d="M16.2 5.4a3.2 3.2 0 0 1 0 6"/><path d="M17.6 14.4a5.6 5.6 0 0 1 3 5.2"/></symbol>' +
+      '<symbol id="sc-backpack" viewBox="0 0 24 24"><path d="M6.2 8.6a4.2 4.2 0 0 1 4.2-4.2h3.2a4.2 4.2 0 0 1 4.2 4.2v9.6a2.2 2.2 0 0 1-2.2 2.2H8.4a2.2 2.2 0 0 1-2.2-2.2Z"/><path d="M9.4 4.4V3.6a1.4 1.4 0 0 1 1.4-1.4h2.4a1.4 1.4 0 0 1 1.4 1.4v.8"/><path d="M9.4 11.6h5.2v3.8H9.4Z"/></symbol>' +
+      '<symbol id="sc-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.2 14.4a1.5 1.5 0 0 0 .3 1.7l.1.1a1.8 1.8 0 1 1-2.6 2.6l-.1-.1a1.5 1.5 0 0 0-2.5 1v.3a1.8 1.8 0 1 1-3.6 0v-.2a1.5 1.5 0 0 0-2.6-1l-.1.1a1.8 1.8 0 1 1-2.6-2.6l.1-.1a1.5 1.5 0 0 0-1-2.5h-.3a1.8 1.8 0 1 1 0-3.6h.2a1.5 1.5 0 0 0 1-2.6l-.1-.1a1.8 1.8 0 1 1 2.6-2.6l.1.1a1.5 1.5 0 0 0 1.7.3h.1a1.5 1.5 0 0 0 .9-1.4v-.3a1.8 1.8 0 1 1 3.6 0v.2a1.5 1.5 0 0 0 2.5 1l.1-.1a1.8 1.8 0 1 1 2.6 2.6l-.1.1a1.5 1.5 0 0 0 1 2.5h.3a1.8 1.8 0 1 1 0 3.6h-.2a1.5 1.5 0 0 0-1.4.9Z"/></symbol>' +
+      '<symbol id="sc-heart" viewBox="0 0 24 24"><path d="M12 20.2 4.9 13.3a4.5 4.5 0 0 1 6.4-6.3l.7.7.7-.7a4.5 4.5 0 0 1 6.4 6.3Z"/></symbol>' +
+      '<symbol id="sc-camera" viewBox="0 0 24 24"><path d="M3 9a2.3 2.3 0 0 1 2.3-2.3h1.9l1.2-2.05a1.4 1.4 0 0 1 1.2-.7h4.8a1.4 1.4 0 0 1 1.2.7l1.2 2.05h1.9A2.3 2.3 0 0 1 21 9v8.1a2.3 2.3 0 0 1-2.3 2.3H5.3A2.3 2.3 0 0 1 3 17.1Z"/><circle cx="12" cy="13" r="3.5"/></symbol>' +
+      '<symbol id="sc-church" viewBox="0 0 24 24"><path d="M12 2.4v5.2M9.8 4.6h4.4"/><path d="M5 20.6V11l7-4 7 4v9.6"/><path d="M5 20.6h14"/><path d="M10.2 20.6v-4.2a1.8 1.8 0 0 1 3.6 0v4.2"/></symbol>' +
+      '<symbol id="sc-family" viewBox="0 0 24 24"><circle cx="7.4" cy="6.6" r="2.6"/><circle cx="16.6" cy="6.6" r="2.6"/><path d="M3.2 20.4v-4a4.2 4.2 0 0 1 8.4 0v4"/><path d="M12.4 20.4v-4a4.2 4.2 0 0 1 8.4 0v4"/></symbol>' +
+      '<symbol id="sc-inbox" viewBox="0 0 24 24"><path d="M3.4 13.4h4.2l1.4 2.4h6l1.4-2.4h4.2"/><path d="M4.9 5.2h14.2l1.5 8.2v4.2a2 2 0 0 1-2 2H5.4a2 2 0 0 1-2-2v-4.2Z"/></symbol>' +
+      '<symbol id="sc-flask" viewBox="0 0 24 24"><path d="M9.5 3.2h5"/><path d="M10.6 3.2v5.4L5.9 17a2.1 2.1 0 0 0 1.8 3.2h8.6a2.1 2.1 0 0 0 1.8-3.2l-4.7-8.4V3.2"/><path d="M8.2 14.2h7.6"/></symbol>' +
       '<symbol id="sc-sparkle" viewBox="0 0 24 24"><path d="m12 3.4 2 5.3 5.3 2-5.3 2-2 5.3-2-5.3-5.3-2 5.3-2Z"/><path d="M18.4 16.4l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8Z"/></symbol>';
 
   function injectSprite() {
