@@ -492,3 +492,189 @@ img { max-width: 100%; height: auto; }
   .comparison-table { font-size: 0.82rem; }
   .comparison-table th, .comparison-table td { padding: 8px; }
 }
+
+/* ============================================================ Figures
+   These pages carried no graphics at all -- nine pages, zero images -- so a
+   long guide was an unbroken wall of text (Robert, 13 Sep). Built in HTML/CSS
+   rather than SVG because the category labels are long and have to reflow at
+   390px, which a fixed viewBox cannot do.
+   ------------------------------------------------------------------------ */
+
+.fig {
+  margin: 32px 0 36px;
+  padding: 22px 24px 20px;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.fig-title {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.fig-note {
+  margin: 0 0 18px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.fig-source {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.fig-source a { color: var(--go-green); }
+
+/* ---- range bars: each category spans a low-to-high share ---- */
+
+.fig-bars {
+  display: grid;
+  gap: 10px;
+}
+
+.fig-row {
+  display: grid;
+  grid-template-columns: 190px 1fr 62px;
+  align-items: center;
+  gap: 14px;
+}
+
+.fig-label {
+  font-size: 0.84rem;
+  line-height: 1.3;
+  color: var(--text-secondary);
+}
+
+.fig-track {
+  position: relative;
+  height: 14px;
+  border-radius: 7px;
+  background: #eef2f0;
+  /* Recessive gridlines every 10%, drawn into the track so there is no
+     separate axis furniture competing with the marks. */
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent calc(20% - 1px),
+    rgba(13, 17, 23, 0.08) calc(20% - 1px),
+    rgba(13, 17, 23, 0.08) 20%
+  );
+}
+
+.fig-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 7px;
+  background: var(--go-green);
+}
+
+.fig-row.is-emphasis .fig-fill {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--go-green) 0 6px,
+    var(--go-green-dark) 6px 12px
+  );
+}
+
+.fig-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.fig-axis {
+  display: grid;
+  grid-template-columns: 190px 1fr 62px;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.fig-axis-scale {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .fig { padding: 18px 16px 16px; }
+  .fig-row,
+  .fig-axis { grid-template-columns: 1fr 58px; }
+  .fig-label { grid-column: 1 / -1; margin-bottom: -4px; }
+  .fig-axis-scale { grid-column: 1; }
+}
+
+/* ---- timeline rail ---- */
+
+.fig-rail {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fig-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 14px;
+  padding: 0 0 20px;
+}
+
+.fig-step:last-child { padding-bottom: 0; }
+
+.fig-step::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 20px;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.fig-step:last-child::before { display: none; }
+
+.fig-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--go-green-light);
+  border: 2px solid var(--go-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--go-green-dark);
+  position: relative;
+  z-index: 1;
+}
+
+.fig-step-when {
+  margin: 2px 0 2px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.fig-step-what {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
