@@ -747,3 +747,45 @@ img { max-width: 100%; height: auto; }
   .why { padding: 44px 20px; }
   .why-inner { grid-template-columns: 1fr; gap: 28px; }
 }
+
+/* ---- spot illustrations ----
+   Same outline language as the icons: one stroke weight, round caps, GO green,
+   with a single faint tint for depth. Drawn from the domain (a duffel, a
+   passport, a team as shapes) rather than from a mascot, so there is no
+   character to keep consistent across poses. */
+
+.spot {
+  margin: 30px auto;
+  max-width: 340px;
+  text-align: center;
+}
+
+.spot-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: var(--go-green);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.spot-svg .spot-tint {
+  fill: var(--go-green);
+  opacity: 0.08;
+  stroke: none;
+}
+
+.spot figcaption {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .spot { max-width: 280px; }
+}
