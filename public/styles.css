@@ -679,10 +679,11 @@ img { max-width: 100%; height: auto; }
   color: var(--text-secondary);
 }
 
-/* ============================================================ Portraits
-   Portrait photography at a wide aperture so the person carries the frame.
-   Robert, 13 Sep: GO is about obeying Jesus and going, and the why is
-   Romans 10:14-15, so the imagery is of the people sent, not of recipients.
+/* ============================================================ Why we go
+   The Romans 10:14-15 block. It carried a generated portrait for a few hours on
+   13 Sep; Robert did not like the photorealism, so the verse carries it alone
+   until there is artwork worth putting beside it. The two-column rule is kept
+   for whenever that lands.
    ------------------------------------------------------------------------ */
 
 .why {
@@ -701,10 +702,13 @@ img { max-width: 100%; height: auto; }
   align-items: center;
 }
 
-.why-figure {
-  margin: 0;
-  position: relative;
+.why-inner.is-solo {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 720px;
+  text-align: left;
 }
+
+.why-figure { margin: 0; }
 
 .why-figure img {
   display: block;
@@ -717,17 +721,17 @@ img { max-width: 100%; height: auto; }
 }
 
 .why-verse {
-  margin: 0 0 18px;
-  padding-left: 18px;
+  margin: 0 0 20px;
+  padding-left: 20px;
   border-left: 3px solid var(--go-green);
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.65;
   color: var(--text-primary);
 }
 
 .why-verse cite {
   display: block;
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 0.82rem;
   font-style: normal;
   font-weight: 700;
@@ -736,43 +740,10 @@ img { max-width: 100%; height: auto; }
   color: var(--go-green);
 }
 
-.why h2 {
-  margin: 0 0 12px;
-  font-size: 1.5rem;
-  line-height: 1.25;
-}
-
-.why p {
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin: 0 0 12px;
-}
-
-/* An inline portrait that breaks up a long guide. */
-.portrait {
-  margin: 34px 0;
-}
-
-.portrait img {
-  display: block;
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  object-position: center 35%;
-  border-radius: var(--radius-lg);
-  background: #e8ecea;
-}
-
-.portrait figcaption {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--text-muted);
-}
+.why h2 { margin: 0 0 12px; font-size: 1.5rem; line-height: 1.25; }
+.why p { color: var(--text-secondary); line-height: 1.7; margin: 0 0 12px; }
 
 @media (max-width: 820px) {
   .why { padding: 44px 20px; }
   .why-inner { grid-template-columns: 1fr; gap: 28px; }
-  .why-figure { max-width: 380px; }
-  .portrait img { max-height: 300px; }
 }
