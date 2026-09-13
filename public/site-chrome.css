@@ -5,6 +5,7 @@
  * so it cannot link the original. Re-copy both site-chrome files when the
  * shared chrome changes.
  */
+
 /*
  * site-chrome.css — one header and one footer for the public marketing pages.
  *
@@ -39,6 +40,12 @@
   --sc-footer-ink: #c9d4d1;
   --sc-header-h: 68px;
   --sc-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* The header is sticky, so an in-page anchor would otherwise drop its target
+   underneath the bar. Keep jumps clear of it. */
+html {
+  scroll-padding-top: calc(var(--sc-header-h) + 16px);
 }
 
 /* ---------------------------------------------------------------- header */
