@@ -1,22 +1,38 @@
-# Mission Trip Planning Software for Churches
+# Mission Trip Planning: guides, checklists and costs for churches
 
-> Free mission trip planning and management software for churches and ministries — plan trips, run fundraising, track donors, collect applications and e-signatures, and manage budgets, with no platform fees. Powered by GO by MKDSCPLS.
+> Practical, free guides for church missions teams planning a short-term mission
+> trip: step-by-step planning, a full checklist, real cost ranges and a budget
+> calculator, packing lists, fundraising ideas, team recruiting, and how to find
+> and vet a mission partner. Written for gospel centered trips where the
+> spiritual preparation of the team matters as much as the logistics. The
+> optional software behind it is GO by MKDSCPLS, which is free for up to 5 trips
+> with no platform fees.
 
-This site helps church missions teams and trip leaders plan and manage short-term mission trips. The software itself is GO by MKDSCPLS; get started for free at https://go.mkdscpls.com/get-started.
+This site is a planning resource first. Churches usually arrive while planning a
+trip, not while shopping for software.
 
-## Core pages
-- [Home](https://missiontripplanning.com/): What mission trip planning software does and why it's free.
+## Planning guides
+- [How to plan a mission trip](https://missiontripplanning.com/how-to-plan-a-mission-trip): The full step-by-step process for organizing a church mission trip, from first decision to departure.
+- [Mission trip checklist](https://missiontripplanning.com/checklist): Step-by-step timeline from 12 months out to trip launch. What to prepare and when.
+- [Mission trip budget and cost calculator](https://missiontripplanning.com/budget): What a mission trip actually costs. Real ranges for domestic and international trips, including airfare, lodging, in-country transport, visas, travel insurance, immunizations and tipping, with a calculator to estimate a total group cost.
+- [Mission trip packing list](https://missiontripplanning.com/mission-trip-packing-list): What to bring. Documents, clothing, toiletries, ministry materials, health and first aid. Free printable.
+
+## Funding the trip
+- [Mission trip fundraising ideas](https://missiontripplanning.com/mission-trip-fundraising-ideas): 30 ways to fund a trip, including support letters, team fundraisers and sponsorship, for individuals and whole teams.
+
+## Building and sending the team
+- [Filling your team](https://missiontripplanning.com/filling-your-team): How to recruit and select the right people for a church mission trip.
+- [Church mission partners](https://missiontripplanning.com/church-mission-partners): How churches find, vet and work with reliable international mission trip partners and in-country hosts, and what to ask before committing a team.
+
+## Choosing software, if you need it
+- [Compare mission trip management software](https://missiontripplanning.com/compare): How GO compares with other mission trip management platforms, including Managed Missions and ServiceReef. Features, pricing and platform fees.
 - [Features](https://missiontripplanning.com/features): Trip management, fundraising, donor tracking, applications, e-signatures.
-- [Pricing](https://missiontripplanning.com/pricing): Free to use — no platform fees.
-- [Compare](https://missiontripplanning.com/compare): How it compares to other mission trip management tools.
-
-## Guides
-- [How to plan a mission trip](https://missiontripplanning.com/how-to-plan-a-mission-trip): Step-by-step planning guide for churches.
-- [Mission trip checklist](https://missiontripplanning.com/checklist): What to prepare before a short-term mission trip.
-- [Mission trip budget](https://missiontripplanning.com/budget): How to estimate and manage mission trip costs.
+- [Pricing](https://missiontripplanning.com/pricing): Free for up to 5 trips and offline giving. No platform fee at any tier.
+- [Home](https://missiontripplanning.com/): What mission trip planning software does and why the base plan is free.
 
 ## Get started
 - [Start free](https://go.mkdscpls.com/get-started): Create your church's mission trip on GO by MKDSCPLS.
 
 ## About
-Operated by Make Disciples Ministries. Contact: support@mkdscpls.com
+Operated by Make Disciples Ministries, a Virginia nonstock corporation.
+Contact: support@mkdscpls.com
