@@ -3,34 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Trip Cost Calculator: What a Trip Really Costs in 2026</title>
-  <meta name="description" content="What a mission trip really costs in 2026: per-person ranges, plus visas, insurance and tipping, and a free calculator to total it for your team.">
+  <title>Mission Trip Costs in 2026: A Budget Guide for Churches</title>
+  <meta name="description" content="What a mission trip really costs in 2026: per-person ranges for domestic and international trips, plus visas, insurance, tipping and the costs teams forget.">
   <meta name="keywords" content="mission trip cost, mission trip budget, how much does a mission trip cost, mission trip expenses, mission trip fundraising goal, church mission trip budget">
   <link rel="canonical" href="https://missiontripplanning.com/budget">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Mission Trip Cost Calculator: What a Trip Really Costs in 2026">
-  <meta property="og:description" content="What a mission trip really costs in 2026: per-person ranges, plus visas, insurance and tipping, and a free calculator to total it for your team.">
+  <meta property="og:title" content="Mission Trip Costs in 2026: A Budget Guide for Churches">
+  <meta property="og:description" content="What a mission trip really costs in 2026: per-person ranges for domestic and international trips, plus visas, insurance, tipping and the costs teams forget.">
   <meta property="og:url" content="https://missiontripplanning.com/budget">
   <meta property="og:site_name" content="MissionTripPlanning.com">
   <meta property="og:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mission Trip Cost Calculator & Budget Guide for Churches (2026)">
-  <meta name="twitter:description" content="What does a mission trip actually cost in 2026? Real budget ranges for domestic and international trips, plus a cost calculator and fundraising tips for churches.">
+  <meta name="twitter:title" content="Mission Trip Costs in 2026: A Budget Guide for Churches">
+  <meta name="twitter:description" content="What a mission trip really costs in 2026: per-person ranges for domestic and international trips, plus visas, insurance, tipping and the costs teams forget.">
   <meta name="twitter:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Article Schema -->
@@ -42,7 +64,7 @@
     "description": "A comprehensive guide to mission trip costs in 2026, including average prices by destination, budget line items, fundraising math, and hidden costs most leaders miss.",
     "url": "https://missiontripplanning.com/budget",
     "datePublished": "2026-04-11",
-    "dateModified": "2026-04-11",
+    "dateModified": "2026-09-27",
     "publisher": {
       "@type": "Organization",
       "name": "GO by MKDSCPLS",
@@ -213,13 +235,13 @@
       margin-bottom: 6px;
     }
   </style>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -260,7 +282,7 @@
   <section class="hero" style="padding-bottom: 40px;">
     <div class="container">
       <h1>Mission Trip Budget Guide:<br>What It Actually Costs</h1>
-      <p>Realistic numbers, line-by-line breakdowns, and the hidden costs most trip leaders learn about the hard way. Everything you need to build a budget your church can trust.</p>
+      <p>How much does a mission trip cost? For a trip of seven to ten days, most church teams pay $500 to $1,500 per person within the United States and $1,500 to $5,000 per person abroad. Below are realistic ranges by destination, line-by-line breakdowns, and the hidden costs most trip leaders learn about the hard way.</p>
     </div>
   </section>
 
@@ -574,6 +596,21 @@
         </div>
 
         <div class="hidden-cost-item">
+          <h4>Partner Program Fees</h4>
+          <p>Many host ministries charge a per-person or per-day fee that bundles lodging, meals, drivers, translators and coordination. Ask exactly what it covers so you do not budget for the same meals twice.</p>
+        </div>
+
+        <div class="hidden-cost-item">
+          <h4>A Gift for Your Host</h4>
+          <p>Many teams leave a financial gift with the host church or ministry to honor its hospitality and support its work after you leave. Decide the amount up front and put it in the budget.</p>
+        </div>
+
+        <div class="hidden-cost-item">
+          <h4>Personal Spending Money</h4>
+          <p>Souvenirs, snacks and the odd coffee are not part of the trip cost. Tell travelers to bring their own, and say plainly that the trip budget does not cover it.</p>
+        </div>
+
+        <div class="hidden-cost-item">
           <h4>Travel Insurance Gaps</h4>
           <p>Basic travel insurance often excludes adventure activities, pre-existing conditions, and pandemic-related cancellations. Read the fine print. Upgraded coverage adds $25-50 per person.</p>
         </div>
@@ -599,8 +636,23 @@
     </div>
   </section>
 
-  <!-- More Resources -->
+  <!-- Handling the money -->
   <section class="section-alt article-body">
+    <div class="container">
+      <h2>Handling the Money With Integrity</h2>
+      <p>Every dollar in a trip budget is someone's gift. A few habits keep it that way and make the next trip easier to fund:</p>
+      <ul>
+        <li><strong>Everything flows through the church.</strong> Never collect gifts into a personal account. Gifts to the church's trip fund can be receipted, and the church stays in control of how they are used.</li>
+        <li><strong>One person keeps the books, and it is not the trip leader.</strong> A separate financial point person tracks income and spending and gives the team and church leaders regular updates.</li>
+        <li><strong>Set a fundraising deadline six to eight weeks before departure,</strong> and agree in advance what happens if someone is short: a scholarship, more time, or an honest conversation.</li>
+        <li><strong>Name a team treasurer for the field</strong> who carries shared cash and records every purchase.</li>
+        <li><strong>Report within two weeks of coming home:</strong> what was raised, what was spent by category, and where any balance went (back to the missions fund, to the partner, or toward the next trip).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- More Resources -->
+  <section class="section-alt article-body" data-nosnippet>
     <div class="container">
       <h2>More Resources for Trip Leaders</h2>
       <p>Budget is one piece of the puzzle. These guides cover the rest of what you need to plan a successful mission trip.</p>
@@ -608,7 +660,17 @@
       <div class="resources-grid">
         <a href="/checklist" class="resource-card">
           <h3>Mission Trip Planning Checklist</h3>
-          <p>A month-by-month timeline of everything you need to do, from 12 months out to the day you leave. Covers logistics, team prep, fundraising milestones, and more.</p>
+          <p>A month-by-month checklist from 6 months before the trip through the debrief afterward. Covers logistics, team prep, fundraising milestones, and more.</p>
+        </a>
+
+        <a href="/mission-trip-fundraising-ideas" class="resource-card">
+          <h3>Mission Trip Fundraising Ideas</h3>
+          <p>How travelers raise the money once you have the per-person number: a timeline, thirty ideas, and which ones are worth the effort.</p>
+        </a>
+
+        <a href="/how-to-go-on-a-mission-trip" class="resource-card">
+          <h3>How to Go on a Mission Trip</h3>
+          <p>A short guide for the person going: start with your church, understand the cost, raise support, prepare.</p>
         </a>
 
         <a href="/compare" class="resource-card">
@@ -631,7 +693,7 @@
   <!-- Footer -->
   
     <p style="margin:1.4rem 0;padding:0.9rem 1.1rem;background:#f4f7f5;border-left:3px solid #789078;border-radius:0 8px 8px 0;font-size:0.95rem;color:#374151;">Wondering what it takes to run this trip on software instead of a spreadsheet? <a href="/start" style="color:#2B6B5F;font-weight:700;">See what setting up a trip involves</a>, including what the free plan covers and when it is not worth it.</p>
-<footer class="sc-footer">
+<footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -642,15 +704,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -659,7 +722,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -670,7 +733,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

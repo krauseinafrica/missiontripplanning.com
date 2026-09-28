@@ -3,25 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Trip Management Software Comparison (2026)</title>
-  <meta name="description" content="Compare mission trip management software for churches. GO vs ServiceReef vs Managed Missions on features, pricing and platform fees.">
-  <meta name="keywords" content="mission trip management software, managed missions, mission trip software, mission trip planning comparison, church mission trip tools">
+  <title>How to Choose Mission Trip Software: 6 Questions for Churches</title>
+  <meta name="description" content="Six questions to ask before your church picks mission trip software: gifts and fees, forms and minors, team connection, cost, phones and getting your data out.">
+  <meta name="keywords" content="how to choose mission trip software, mission trip management software, mission trip software for churches, church mission trip tools, mission trip planning software">
   <link rel="canonical" href="https://missiontripplanning.com/compare">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Mission Trip Management Software Comparison (2026)">
-  <meta property="og:description" content="Compare mission trip management software for churches. GO vs ServiceReef vs Managed Missions on features, pricing and platform fees.">
+  <meta property="og:title" content="How to Choose Mission Trip Software: 6 Questions for Churches">
+  <meta property="og:description" content="Six questions to ask before your church picks mission trip software: gifts and fees, forms and minors, team connection, cost, phones and getting your data out.">
   <meta property="og:url" content="https://missiontripplanning.com/compare">
+  <meta property="og:site_name" content="MissionTripPlanning.com">
+  <meta property="og:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Choose Mission Trip Software: 6 Questions for Churches">
+  <meta name="twitter:description" content="Six questions to ask before your church picks mission trip software: gifts and fees, forms and minors, team connection, cost, phones and getting your data out.">
+  <meta name="twitter:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
+
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Article Schema -->
@@ -29,170 +60,170 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Mission Trip Management Software Comparison (2026)",
-    "description": "Compare the top mission trip management platforms for churches. GO vs ServiceReef vs Managed Missions: features, pricing, and what actually matters for your team.",
+    "headline": "How to Choose Mission Trip Software: 6 Questions for Churches",
+    "description": "Six questions to ask before your church picks mission trip software: gifts and fees, forms and minors, team connection, cost, phones and getting your data out.",
     "url": "https://missiontripplanning.com/compare",
     "datePublished": "2026-04-11",
-    "dateModified": "2026-04-11",
-    "author": {
+    "dateModified": "2026-09-28",
+    "publisher": {
       "@type": "Organization",
       "name": "GO by MKDSCPLS",
       "url": "https://go.mkdscpls.com"
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "MissionTripPlanning.com"
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://missiontripplanning.com/compare"
     }
   }
   </script>
 
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does our church need mission trip software at all?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Not always. One small trip a year with a leader who is comfortable in a spreadsheet can run well without it. Software starts to earn its place when you have several travelers raising support, forms that need signatures, minors on the team, or more than one trip at a time." }
+      },
+      {
+        "@type": "Question",
+        "name": "What fees should we expect on donations?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Every online gift carries a card or bank processing fee. Some platforms also add their own percentage on top. Ask for both numbers. GO adds no platform fee on any plan, so the only cost on a gift is standard processing: 2.9% + $0.30 for cards, or 0.8% capped at $5 for bank transfers." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can minors sign waivers in GO?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A parent or guardian co-signs for a minor. Every signer gets a copy of the signed document by email, and this is on every GO plan." }
+      },
+      {
+        "@type": "Question",
+        "name": "What does GO cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Free plan covers up to 5 active trips with gifts recorded offline (cash, check or a spreadsheet import). Taking gifts online by card or bank transfer needs Starter at $9 a month. Ministry at $39 a month adds unlimited trips and trip templates. E-signatures, announcements, meetings and reminders are on every plan." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a GO app to download?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. GO runs in the phone's web browser, and travelers can add it to their home screen so it opens like an app. There is nothing to install from an app store." }
+      }
+    ]
+  }
+  </script>
+
   <style>
-    .compare-table-wrap {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      margin: 0 -4px;
-      padding: 0 4px;
+    .article-body {
+      max-width: 760px;
+      margin: 0 auto;
     }
-    .compare-table {
-      width: 100%;
-      min-width: 640px;
-      border-collapse: collapse;
-      font-size: 15px;
-      line-height: 1.5;
+    .article-body h2 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      color: #1a202c;
     }
-    .compare-table thead th {
-      background: #1a1a2e;
-      color: #fff;
-      padding: 16px 20px;
-      text-align: left;
-      font-weight: 600;
-      font-size: 15px;
-      position: sticky;
-      top: 0;
+    .article-body p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: #374151;
     }
-    .compare-table thead th:first-child {
-      border-radius: 12px 0 0 0;
-    }
-    .compare-table thead th:last-child {
-      border-radius: 0 12px 0 0;
-    }
-    .compare-table thead th.col-go {
-      background: var(--go-green-dark, #006644);
-    }
-    .compare-table tbody td {
-      padding: 14px 20px;
-      border-bottom: 1px solid #e2e8f0;
-      vertical-align: middle;
-    }
-    .compare-table tbody tr:last-child td {
-      border-bottom: none;
-    }
-    .compare-table tbody tr:hover {
-      background: #f7fafc;
-    }
-    .compare-table tbody td:first-child {
-      font-weight: 500;
-      color: #1a1a2e;
-    }
-    .compare-table tbody td.col-go {
-      background: var(--go-green-light, #E3FCEF);
-      font-weight: 500;
-    }
-    .compare-table tbody tr:hover td.col-go {
-      background: #d0f5e2;
-    }
-    .compare-table-note {
-      font-size: 13px;
-      color: #64748b;
-      margin-top: 16px;
-      line-height: 1.6;
-    }
-    .criteria-grid {
+    .question-list {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 32px;
+      gap: 20px;
+      margin-top: 28px;
     }
-    .criteria-item h3 {
-      font-size: 17px;
-      margin: 0 0 6px 0;
-      color: #1a1a2e;
-    }
-    .criteria-item p {
-      font-size: 15px;
-      color: #475569;
-      margin: 0;
-      line-height: 1.6;
-    }
-    .strength-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 32px;
-    }
-    .strength-card {
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 28px;
-    }
-    .strength-card h3 {
-      font-size: 18px;
-      margin: 0 0 10px 0;
-      color: #1a1a2e;
-    }
-    .strength-card p {
-      font-size: 15px;
-      color: #475569;
-      margin: 0;
-      line-height: 1.6;
-    }
-    .honest-section {
+    .question-card {
       background: #fff;
       border: 1px solid #e2e8f0;
       border-radius: 12px;
       padding: 28px 32px;
-      margin-top: 32px;
     }
-    .honest-section h3 {
-      font-size: 18px;
-      margin: 0 0 16px 0;
-      color: #1a1a2e;
+    .question-card .q-num {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--go-green-dark, #1e4d43);
+      background: var(--go-green-light, #E3FCEF);
+      border-radius: 999px;
+      padding: 3px 10px;
+      margin-bottom: 10px;
     }
-    .honest-section ul {
-      margin: 0;
-      padding-left: 20px;
+    .question-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      color: #1a202c;
+      line-height: 1.35;
     }
-    .honest-section li {
-      font-size: 15px;
-      color: #475569;
+    .question-card p {
+      margin: 0 0 12px;
+      font-size: 1rem;
       line-height: 1.7;
+      color: #374151;
+    }
+    .question-card ul {
+      margin: 0 0 16px;
+      padding-left: 22px;
+    }
+    .question-card li {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #374151;
+      margin-bottom: 4px;
+    }
+    .go-answer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 14px;
+      margin-top: 4px;
+    }
+    .go-answer p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+    .go-answer strong {
+      color: var(--go-green-dark, #1e4d43);
+    }
+    .limits-box {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 24px;
+    }
+    .limits-box ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .limits-box li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #374151;
       margin-bottom: 8px;
     }
-    .best-for-list {
-      list-style: none;
-      padding: 0;
-      margin: 24px 0 0 0;
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 20px 0;
     }
-    .best-for-list li {
-      font-size: 16px;
-      color: #334155;
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-item h3 {
+      font-size: 1.05rem;
+      margin: 0 0 8px;
+      color: #1a202c;
+    }
+    .faq-item p {
+      margin: 0;
+      font-size: 0.95rem;
       line-height: 1.7;
-      padding: 8px 0 8px 28px;
-      position: relative;
-    }
-    .best-for-list li::before {
-      content: "\2713";
-      position: absolute;
-      left: 0;
-      color: var(--go-green, #00875A);
-      font-weight: 700;
+      color: #475569;
     }
     .resource-cards {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 32px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 28px;
     }
     .resource-card {
       background: #fff;
@@ -200,37 +231,40 @@
       border-radius: 12px;
       padding: 28px;
       text-decoration: none;
+      color: inherit;
       transition: box-shadow 0.2s;
     }
     .resource-card:hover {
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     .resource-card h3 {
-      font-size: 18px;
-      margin: 0 0 8px 0;
-      color: #1a1a2e;
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+      color: var(--go-green-dark, #1e4d43);
     }
     .resource-card p {
-      font-size: 15px;
-      color: #475569;
+      font-size: 0.95rem;
+      color: #64748b;
       margin: 0;
-      line-height: 1.6;
+      line-height: 1.5;
     }
-    @media (max-width: 700px) {
-      .criteria-grid,
-      .strength-cards,
-      .resource-cards {
-        grid-template-columns: 1fr;
+    @media (max-width: 600px) {
+      .question-card,
+      .limits-box {
+        padding: 22px 20px;
+      }
+      .article-body h2 {
+        font-size: 1.4rem;
       }
     }
   </style>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -270,224 +304,177 @@
   <!-- Hero -->
   <section class="hero" style="padding-bottom: 40px;">
     <div class="container">
-      <h1>Mission Trip Software Comparison:<br>Finding the Right Fit for Your Church</h1>
-      <p>There are a handful of mission trip management software platforms available today. Each one takes a different approach. Here is a straightforward look at what they offer, where they differ, and how to decide which one fits your church best.</p>
+      <h1>How to Choose Mission Trip Software</h1>
+      <p>Several good tools exist for running church mission trips, and the right one depends on your church. These six questions will help you decide, whichever tool you end up using. Under each one we say plainly where GO stands, including what it does not do.</p>
     </div>
   </section>
 
-  <!-- What to Look For -->
+  <!-- Start here -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom: 8px;">What to Look for in Mission Trip Software</h2>
-      <p style="text-align:center; color: #64748b; max-width: 680px; margin: 0 auto 16px;">Before comparing platforms, it helps to know which features actually matter day-to-day. These are the criteria we hear trip leaders ask about most. If you are still scoping the trip itself, our <a href="/how-to-plan-a-mission-trip" style="color: var(--go-green);">step-by-step guide to planning a mission trip</a> covers the whole process.</p>
-
-      <div class="criteria-grid">
-        <div class="criteria-item">
-          <h3>Online Donation Processing</h3>
-          <p>Can donors give online with a card or bank transfer? What are the processing fees, and who pays them?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>Fundraising Tracking</h3>
-          <p>Can each team member see their individual progress? Can leaders see the full picture for the entire team at a glance?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>Task and Document Management</h3>
-          <p>Can you assign tasks (passport copies, medical forms, deposits) and track who has completed what?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>E-Signatures for Waivers</h3>
-          <p>Can participants sign liability waivers and medical releases digitally? What about minors who need a guardian co-signature?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>Budget and Expense Tracking</h3>
-          <p>Can you build a trip budget, log expenses against it, and see where you stand financially at any point?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>Team Communication</h3>
-          <p>Is there a built-in way to reach your team, or are you still copying email addresses into BCC fields?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>Reporting and Reconciliation</h3>
-          <p>Can your finance team pull clean reports? Can you reconcile donations against bank deposits without a spreadsheet?</p>
-        </div>
-        <div class="criteria-item">
-          <h3>Setup Time and Price</h3>
-          <p>How long before your team can actually use the platform? And what does it cost: upfront, monthly, or per transaction?</p>
-        </div>
+      <div class="article-body">
+        <h2>Start with how your trips actually run</h2>
+        <p>Before you look at any software, write down how your last trip worked: who collected the deposits, where the waivers lived, how the team heard about meetings, and what the finance office needed at the end. The best tool is the one that removes the steps that cost you the most time, not the one with the longest feature list.</p>
+        <p>If you are still planning the trip itself, start with our <a href="/how-to-plan-a-mission-trip" style="color: var(--go-green);">step-by-step guide to planning a mission trip</a>. Then bring these questions to any tool you are considering.</p>
       </div>
     </div>
   </section>
 
-  <!-- The Comparison -->
+  <!-- The six questions -->
   <section class="section-alt">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom: 8px;">The Comparison</h2>
-      <p style="text-align:center; color: #64748b; max-width: 680px; margin: 0 auto 32px;">A side-by-side look at three mission trip management platforms churches use today.</p>
-
-      <div class="compare-table-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th class="col-go">GO by MKDSCPLS</th>
-              <th>ServiceReef</th>
-              <th>Managed Missions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Starting Price</td>
-              <td class="col-go">Free</td>
-              <td>Custom pricing</td>
-              <td>Custom pricing</td>
-            </tr>
-            <tr>
-              <td>Platform Fees</td>
-              <td class="col-go">None</td>
-              <td>Varies</td>
-              <td>Varies</td>
-            </tr>
-            <tr>
-              <td>Online Donations</td>
-              <td class="col-go">Yes (card + ACH + digital wallet)</td>
-              <td>Yes</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Individual Fundraising Pages</td>
-              <td class="col-go">Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>E-Signatures</td>
-              <td class="col-go">Yes (inc. minor guardian co-sign)</td>
-              <td>Limited</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Task Management</td>
-              <td class="col-go">Yes</td>
-              <td>Basic</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Budget Tracking</td>
-              <td class="col-go">Yes</td>
-              <td>Limited</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Fundraising Milestones</td>
-              <td class="col-go">Yes (stoplight indicators)</td>
-              <td>No</td>
-              <td>Basic</td>
-            </tr>
-            <tr>
-              <td>Donor Portal (no account needed)</td>
-              <td class="col-go">Yes (magic link)</td>
-              <td>No</td>
-              <td>Varies</td>
-            </tr>
-            <tr>
-              <td>Discipleship / Devotional Tools</td>
-              <td class="col-go">Yes (reading plans, courses)</td>
-              <td>No</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>ACH Bank Transfers</td>
-              <td class="col-go">Yes (0.8% capped at $5)</td>
-              <td>Varies</td>
-              <td>Varies</td>
-            </tr>
-            <tr>
-              <td>Setup Time</td>
-              <td class="col-go">Minutes</td>
-              <td>Days to weeks</td>
-              <td>Days to weeks</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="article-body">
+        <h2>Six questions to ask</h2>
       </div>
 
-      <p class="compare-table-note">Competitor information is based on publicly available data as of April 2026. Features and pricing may have changed. If you notice something outdated, let us know and we will update it.</p>
+      <div class="question-list article-body">
+
+        <div class="question-card">
+          <span class="q-num">Question 1</span>
+          <h3>How will we collect deposits and gifts, and is there a fee on donations?</h3>
+          <p>Most of a trip's money comes from supporters giving toward a traveler. Ask:</p>
+          <ul>
+            <li>Can supporters give online by card or bank transfer, and can you still record cash and checks?</li>
+            <li>What is the processing fee, and does the platform add its own percentage on top of it?</li>
+            <li>Where does the money go: straight to the church, or through the vendor first?</li>
+            <li>Can each traveler see their own progress, and can leaders see the whole team?</li>
+          </ul>
+          <div class="go-answer">
+            <p><strong>Where GO stands:</strong> GO adds no platform fee on donations, on any plan. The only cost on an online gift is standard processing: 2.9% + $0.30 for cards, or 0.8% capped at $5 for bank transfers, and donors can choose to cover it. Gifts go straight to your church's own payment account, not through us. Cash and check gifts can be recorded or imported from a spreadsheet on every plan; taking gifts online needs the Starter plan. If your church would rather send donors to its own giving page, GO can do that instead.</p>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="q-num">Question 2</span>
+          <h3>Can we handle forms, e-signatures and minors safely?</h3>
+          <p>Waivers, medical releases and passport details are where trips get stressful. Ask:</p>
+          <ul>
+            <li>Can travelers sign waivers online, and does each signer get a copy?</li>
+            <li>How does a parent or guardian sign for a minor?</li>
+            <li>Who can see a traveler's medical and passport details?</li>
+            <li>Will travelers be asked for the same information more than once?</li>
+          </ul>
+          <div class="go-answer">
+            <p><strong>Where GO stands:</strong> E-signatures are on every plan. A parent or guardian co-signs for a minor, and every signer gets the signed copy by email. Each traveler fills in one info sheet, and tasks that ask for the same details tick off from it, so nobody types their passport number twice. Your church still decides which forms you need and what they say.</p>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="q-num">Question 3</span>
+          <h3>How do we keep the team connected before, during and after the trip?</h3>
+          <p>A team that has prayed and prepared together travels well. Ask:</p>
+          <ul>
+            <li>Can leaders reach the whole team without copying email addresses by hand?</li>
+            <li>Can you schedule team meetings and remind people about deadlines?</li>
+            <li>Is there anything for the team's spiritual preparation, not just logistics?</li>
+            <li>Can everyone see the day-by-day plan while they are traveling?</li>
+          </ul>
+          <div class="go-answer">
+            <p><strong>Where GO stands:</strong> Team announcements (emailed to everyone), meetings and automated reminders are on every plan, and so is a day-by-day itinerary. Every plan includes the Sent Ones team reading plan; Ministry adds every team reading plan. GO helps with the preparation, but the meetings, the prayer and the debrief after you come home are still led by people.</p>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="q-num">Question 4</span>
+          <h3>What does it cost for a church our size?</h3>
+          <p>Pricing models vary a lot, so compare what you would actually pay. Ask:</p>
+          <ul>
+            <li>Is the price per trip, per traveler, per month, or a percentage of what you raise?</li>
+            <li>What happens to the price if you run more trips next year?</li>
+            <li>Is there a contract, a setup fee, or a trial that ends?</li>
+          </ul>
+          <div class="go-answer">
+            <p><strong>Where GO stands:</strong> Pricing depends on how many trips you run and whether you take gifts online, not on church size or team size. The Free plan covers up to 5 active trips with gifts recorded offline. Starter is $9 a month and adds online giving. Ministry is $39 a month and adds unlimited trips and trip templates. There are no contracts. See <a href="/pricing" style="color: var(--go-green);">pricing</a> for the full list.</p>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="q-num">Question 5</span>
+          <h3>Can travelers use it on their phones?</h3>
+          <p>Most travelers will never open a laptop for this. Ask:</p>
+          <ul>
+            <li>Can someone apply, sign a waiver and finish their tasks on a phone?</li>
+            <li>Do they need to download an app, or does it work in the browser?</li>
+            <li>Is the itinerary easy to find on the trip itself?</li>
+          </ul>
+          <div class="go-answer">
+            <p><strong>Where GO stands:</strong> GO works in the phone's web browser, and travelers can add it to their home screen so it opens like an app. There is no app store download. Applying, signing, filling in the info sheet and checking the itinerary all work on a phone.</p>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="q-num">Question 6</span>
+          <h3>How do we get our data out?</h3>
+          <p>Your finance office will need reports, and one day you may change tools. Ask:</p>
+          <ul>
+            <li>Can you download gifts, fees and net amounts for reconciliation?</li>
+            <li>Can you export the team roster and readiness, not just the money?</li>
+            <li>If you leave, what can you take with you, and in what format?</li>
+          </ul>
+          <div class="go-answer">
+            <p><strong>Where GO stands:</strong> Trip leaders can download the trip's financial report (including fees and net amounts) and the team's readiness report as spreadsheet (CSV) files. If you need something exported that you cannot find, email <a href="mailto:support@mkdscpls.com" style="color: var(--go-green);">support@mkdscpls.com</a> and we will help.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- Where GO Stands Out -->
+  <!-- What GO doesn't do -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom: 8px;">Where GO Stands Out</h2>
-      <p style="text-align:center; color: #64748b; max-width: 680px; margin: 0 auto 16px;">A few areas where GO takes a meaningfully different approach.</p>
-
-      <div class="strength-cards">
-        <div class="strength-card">
-          <h3>A Free Tier That Actually Works</h3>
-          <p>GO is not a 14-day trial. The free plan lets you create a trip, invite your team, collect donations, assign tasks, and manage your budget. You only upgrade when you need advanced features like multi-trip reporting or Planning Center integration.</p>
-        </div>
-        <div class="strength-card">
-          <h3>Zero Platform Fees</h3>
-          <p>GO never charges a platform fee on top of payment processing. The only fees are standard Stripe rates: 2.9% + $0.30 for cards, 0.8% (capped at $5) for ACH. Every dollar possible goes to the mission.</p>
-        </div>
-        <div class="strength-card">
-          <h3>Built-in Discipleship</h3>
-          <p>Most mission trip software stops at logistics. GO connects to a full discipleship platform with pre-trip reading plans, devotionals, and structured courses. Trip preparation becomes spiritual preparation, not just packing lists.</p>
-        </div>
-        <div class="strength-card">
-          <h3>Penny-Accurate Donation Splitting</h3>
-          <p>When a donor gives to your trip, the software splits the amount across your team with zero rounding loss. Remainder pennies are distributed using a fair algorithm. Your finance team never has to chase missing cents.</p>
+      <div class="article-body">
+        <h2>What GO does not do</h2>
+        <p>It is easier to choose well when you know the limits up front.</p>
+        <div class="limits-box">
+          <ul>
+            <li>GO does not book flights or lodging. You can ask travel providers for quotes from inside a trip, but your team still chooses and books.</li>
+            <li>GO does not build your budget for you. It gives you a place to plan it and track against it, but every trip's costs are its own.</li>
+            <li>GO does not replace the people. Meetings, prayer, the airport and the debrief stay with your leaders.</li>
+            <li>GO has no app store app. It runs in the browser on any phone or computer.</li>
+            <li>Online card and bank gifts need the Starter plan or above. The Free plan records gifts that come in offline.</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Where Others May Be Better -->
+  <!-- FAQ -->
   <section class="section-alt">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom: 8px;">Where Others May Be a Better Fit</h2>
-      <p style="text-align:center; color: #64748b; max-width: 680px; margin: 0 auto 16px;">No platform is the right answer for everyone. Here are situations where another tool might serve you better.</p>
+      <div class="article-body">
+        <h2>Common questions</h2>
 
-      <div class="honest-section">
-        <h3>When to consider ServiceReef</h3>
-        <ul>
-          <li>ServiceReef has deep integrations with missions agencies and sending organizations. If your church works closely with an agency that already uses ServiceReef, staying in that ecosystem can simplify coordination and avoid duplicate data entry.</li>
-          <li>Their network-level features are designed for organizations that manage relationships across multiple agencies and field partners over many years.</li>
-        </ul>
-      </div>
+        <div class="faq-item">
+          <h3>Does our church need mission trip software at all?</h3>
+          <p>Not always. One small trip a year with a leader who is comfortable in a spreadsheet can run well without it. Software starts to earn its place when you have several travelers raising support, forms that need signatures, minors on the team, or more than one trip at a time.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What fees should we expect on donations?</h3>
+          <p>Every online gift carries a card or bank processing fee. Some platforms also add their own percentage on top. Ask for both numbers. GO adds no platform fee on any plan, so the only cost on a gift is standard processing: 2.9% + $0.30 for cards, or 0.8% capped at $5 for bank transfers.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can minors sign waivers in GO?</h3>
+          <p>A parent or guardian co-signs for a minor. Every signer gets a copy of the signed document by email, and this is on every GO plan.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What does GO cost?</h3>
+          <p>The Free plan covers up to 5 active trips with gifts recorded offline (cash, check or a spreadsheet import). Taking gifts online by card or bank transfer needs Starter at $9 a month. Ministry at $39 a month adds unlimited trips and trip templates. E-signatures, announcements, meetings and reminders are on every plan.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is there a GO app to download?</h3>
+          <p>No. GO runs in the phone's web browser, and travelers can add it to their home screen so it opens like an app. There is nothing to install from an app store.</p>
+        </div>
 
-      <div class="honest-section" style="margin-top: 24px;">
-        <h3>When to consider Managed Missions</h3>
-        <ul>
-          <li>Managed Missions has a longer track record with large organizations and denominations. If your church is part of a network that has already standardized on Managed Missions, the institutional knowledge and existing workflows may outweigh feature differences.</li>
-          <li>Migration always has a cost. If your team has years of historical data in another platform and is comfortable with the current workflow, switching may not be worth the disruption.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Who Is GO Best For? -->
-  <section class="section">
-    <div class="container">
-      <h2 style="text-align:center; margin-bottom: 8px;">Who Is GO Best For?</h2>
-      <p style="text-align:center; color: #64748b; max-width: 680px; margin: 0 auto 16px;">GO was built for a specific kind of church. Here is who tends to get the most out of it.</p>
-
-      <ul class="best-for-list">
-        <li>Churches running one to ten mission trips per year</li>
-        <li>First-time trip leaders who need something simple enough to use without training</li>
-        <li>Churches that want fundraising and discipleship in one tool instead of two</li>
-        <li>Budget-conscious ministries that cannot afford platform fees on top of processing costs</li>
-        <li>Teams that need to be up and running in minutes, not weeks</li>
-      </ul>
-
-      <div style="text-align: center; margin-top: 48px;">
-        <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=compare&amp;utm_content=bottom_cta" class="hero-cta">Try GO Free &rarr;</a>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=compare&amp;utm_content=bottom_cta" class="hero-cta">Try GO with your next trip &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- More Resources -->
-  <section class="section-alt">
+  <section class="section" data-nosnippet>
     <div class="container">
       <h2 style="text-align:center; margin-bottom: 8px;">More Resources</h2>
       <p style="text-align:center; color: #64748b; max-width: 680px; margin: 0 auto 16px;">Keep planning. These guides cover the practical side of getting your trip organized.</p>
@@ -495,18 +482,22 @@
       <div class="resource-cards">
         <a href="/checklist" class="resource-card">
           <h3>Mission Trip Planning Checklist</h3>
-          <p>A step-by-step timeline covering everything from initial vision casting through post-trip follow-up. Download it and start checking boxes.</p>
+          <p>A month-by-month checklist from 6 months before the trip through the debrief afterward.</p>
         </a>
         <a href="/budget" class="resource-card">
           <h3>Mission Trip Budget Guide</h3>
-          <p>How to build a realistic trip budget, account for hidden costs, and keep your finances clean from first deposit to final reconciliation.</p>
+          <p>How to build a realistic trip budget, account for hidden costs, and keep your finances clean.</p>
+        </a>
+        <a href="/mission-trip-fundraising-ideas" class="resource-card">
+          <h3>Fundraising Ideas</h3>
+          <p>Practical ways for travelers to raise support without wearing out their friends.</p>
         </a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="sc-footer">
+  <footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -517,15 +508,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -534,7 +526,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -545,7 +537,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

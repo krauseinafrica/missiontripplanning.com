@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Plan a Mission Trip: A Step-by-Step Guide for Churches (2026)</title>
+  <title>How to Plan a Mission Trip: Step-by-Step Guide for Churches</title>
   <meta name="description" content="A practical, step-by-step guide to planning a church mission trip: vision, destination, team, budget, fundraising, logistics, spiritual prep, and debrief.">
   <meta name="keywords" content="how to plan a mission trip, plan a mission trip, mission trip planning, church mission trip, mission trip guide, mission trip steps, short-term mission planning">
   <link rel="canonical" href="https://missiontripplanning.com/how-to-plan-a-mission-trip">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="How to Plan a Mission Trip: A Step-by-Step Guide for Churches (2026)">
+  <meta property="og:title" content="How to Plan a Mission Trip: Step-by-Step Guide for Churches">
   <meta property="og:description" content="A practical, step-by-step guide to planning a church mission trip: vision, destination, team, budget, fundraising, logistics, spiritual prep, and debrief.">
   <meta property="og:url" content="https://missiontripplanning.com/how-to-plan-a-mission-trip">
   <meta property="og:site_name" content="MissionTripPlanning.com">
@@ -18,19 +18,41 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Plan a Mission Trip: A Step-by-Step Guide for Churches (2026)">
+  <meta name="twitter:title" content="How to Plan a Mission Trip: Step-by-Step Guide for Churches">
   <meta name="twitter:description" content="A practical, step-by-step guide to planning a church mission trip: vision, destination, team, budget, fundraising, logistics, spiritual prep, and debrief.">
   <meta name="twitter:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Schema.org Article -->
@@ -126,13 +148,13 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -174,7 +196,7 @@
     <div class="container">
       <div class="hero-badge">Free Planning Guide</div>
       <h1>How to Plan a Mission Trip: A Step-by-Step Guide for Churches</h1>
-      <p>Nine steps from the first leadership conversation to the final debrief: covering vision, destination, team, budget, fundraising, logistics, spiritual preparation, on-the-field leadership, and re-entry. Written for church leaders planning their first (or fiftieth) trip.</p>
+      <p>How to plan a mission trip, step by step: nine steps from the first leadership conversation to the final debrief, covering vision, destination, team, budget, fundraising, logistics, spiritual preparation, on-the-field leadership, and re-entry. Written for church leaders planning their first (or fiftieth) trip.</p>
     </div>
   </section>
 
@@ -189,7 +211,7 @@
           Whether you are leading your church's first-ever trip or running a ministry that sends dozens of teams a year, the fundamentals are the same. Get the vision right, pick the right partner, build a team who can carry it, fund it well, prepare hearts alongside logistics, and close the loop after you return. Skip a step and the cracks show: in the budget, in the team dynamic, or in the lasting impact of the trip itself.
         </p>
         <p style="color: var(--text-secondary); line-height: 1.8;">
-          If you want a timeline-based companion to this guide, the <a href="/checklist" style="color: var(--go-green);">mission trip planning checklist</a> walks through the same phases with specific action items for each month leading up to departure.
+          If you want a timeline-based companion to this guide, the <a href="/checklist" style="color: var(--go-green);">mission trip planning checklist</a> walks through the same phases with specific action items for each month leading up to departure. Want to go on a trip rather than lead one? Start with <a href="/how-to-go-on-a-mission-trip" style="color: var(--go-green);">how to go on a mission trip</a>.
         </p>
       </div>
     </div>
@@ -638,7 +660,7 @@
   </section>
 
   <!-- Related Resources -->
-  <section class="section">
+  <section class="section" data-nosnippet>
     <div class="container">
       <div class="section-header">
         <h2>Related Resources</h2>
@@ -648,7 +670,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto;">
         <a href="/checklist" class="feature-card" style="text-decoration: none;">
           <h3>Mission Trip Planning Checklist</h3>
-          <p>A timeline-based checklist covering every phase from 6 months out through post-trip follow-up.</p>
+          <p>A month-by-month checklist from 6 months before the trip through the debrief afterward.</p>
         </a>
         <a href="/budget" class="feature-card" style="text-decoration: none;">
           <h3>Mission Trip Budget Guide</h3>
@@ -661,6 +683,10 @@
         <a href="/mission-trip-packing-list" class="feature-card" style="text-decoration: none;">
           <h3>Mission Trip Packing List</h3>
           <p>A printable, category-by-category list of what to bring.</p>
+        </a>
+        <a href="/how-to-go-on-a-mission-trip" class="feature-card" style="text-decoration: none;">
+          <h3>How to Go on a Mission Trip</h3>
+          <p>For individuals: how to find a trip through your church and get ready to go.</p>
         </a>
         <a href="/compare" class="feature-card" style="text-decoration: none;">
           <h3>Mission Trip Software Comparison</h3>
@@ -684,7 +710,7 @@
   <!-- Footer -->
   
     <p style="margin:1.4rem 0;padding:0.9rem 1.1rem;background:#f4f7f5;border-left:3px solid #789078;border-radius:0 8px 8px 0;font-size:0.95rem;color:#374151;">Wondering what it takes to run this trip on software instead of a spreadsheet? <a href="/start" style="color:#2B6B5F;font-weight:700;">See what setting up a trip involves</a>, including what the free plan covers and when it is not worth it.</p>
-<footer class="sc-footer">
+<footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -695,15 +721,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -712,7 +739,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -723,7 +750,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

@@ -3,25 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Trip Software Features | Donations, Tasks, E-Signatures & More</title>
+  <title>Mission Trip Software Features: Gifts, Tasks and E-Signatures</title>
   <meta name="description" content="Run a whole mission trip in one place: online donations, fundraising goals, tasks, e-signatures, budgets and applications, with your team kept in step.">
   <meta name="keywords" content="mission trip management software, mission trip planning features, church mission trip tools, mission trip fundraising software">
   <link rel="canonical" href="https://missiontripplanning.com/features">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mission Trip Software Features | Donations, Tasks, E-Signatures & More">
+  <meta property="og:title" content="Mission Trip Software Features: Gifts, Tasks and E-Signatures">
   <meta property="og:description" content="Run a whole mission trip in one place: online donations, fundraising goals, tasks, e-signatures, budgets and applications, with your team kept in step.">
   <meta property="og:url" content="https://missiontripplanning.com/features">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Schema.org SoftwareApplication -->
@@ -82,13 +104,13 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -99,8 +121,13 @@
       color: #fff; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.02em;
     }
   </style>
+  <style>
+    .feature-visual.feature-shot { padding: 0; min-height: 0; background: #fff; overflow: hidden; box-shadow: 0 18px 36px -18px rgba(16, 40, 34, 0.35); }
+    .feature-visual.feature-shot img { display: block; width: 100%; height: auto; }
+  </style>
 </head>
 <body>
+<svg id="mtp-sprite" xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="i-giving" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="8.6" width="18.8" height="11.4" rx="2.2"/><circle cx="12" cy="14.3" r="2.9"/><path d="M12 6.2V1.9M12 1.9 9.4 4.6M12 1.9l2.6 2.7"/></symbol><symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.8"/><path d="m8 12.2 2.8 2.8 5.2-5.8"/></symbol><symbol id="i-signature" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.4 17.8c2.6 0 3-4.6 4.4-8.2 1-2.6 2.6-2.4 2.8.4.2 3.2-.6 6.4.8 7.2 1.6.9 2.6-2.2 4.2-2.2 1.2 0 1.4 1.4 2.6 1.4h2.4"/><path d="M4.2 21h15.6"/></symbol><symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.1"/></symbol><symbol id="i-money" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="6.3" width="18.8" height="11.4" rx="2.2"/><circle cx="12" cy="12" r="2.9"/><path d="M6.2 9.6h.01M17.8 14.4h.01"/></symbol><symbol id="i-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.4 2.8h13.2v18.4l-2.2-1.5-2.2 1.5-2.2-1.5-2.2 1.5-2.2-1.5-2.2 1.5Z"/><path d="M8.6 8h6.8M8.6 12h6.8M8.6 15.6h4"/></symbol><symbol id="i-itinerary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5.2" width="17.6" height="15.6" rx="2.2"/><path d="M3.2 10h17.6M8.2 3.2v4M15.8 3.2v4"/><path d="M7.6 13.6h.01M12 13.6h.01M16.4 13.6h.01M7.6 17h.01M12 17h.01"/></symbol><symbol id="mtp-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6A3.4 3.4 0 0 0 8.6 3.2H4.8A1.3 1.3 0 0 0 3.5 4.5v11.3A1.3 1.3 0 0 0 4.8 17h4.1A3 3 0 0 1 12 20"/><path d="M12 6.6a3.4 3.4 0 0 1 3.4-3.4h3.8a1.3 1.3 0 0 1 1.3 1.3v11.3a1.3 1.3 0 0 1-1.3 1.2h-4.1A3 3 0 0 0 12 20"/><path d="M12 6.6V20"/></symbol><symbol id="mtp-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.4" r="3.4"/><path d="M3.4 19.6a5.8 5.8 0 0 1 11.2 0"/><path d="M16.2 5.4a3.2 3.2 0 0 1 0 6"/><path d="M17.6 14.4a5.6 5.6 0 0 1 3 5.2"/></symbol></svg>
 
   <!-- Nav -->
   <!-- Shared marketing chrome. Same definition as startdiscipling.com. -->
@@ -156,7 +183,7 @@
 
       <div class="feature-row">
         <div>
-          <h3>Penny-Accurate Donation Tracking</h3>
+          <h2 class="feature-row-title">Penny-Accurate Donation Tracking</h2>
           <p>When a donor gives to your trip, the software splits it across your team with zero rounding loss. Remainder pennies are distributed fairly. Every dollar is accounted for.</p>
           <ul>
             <li>Credit/debit cards (2.9% + $0.30)</li>
@@ -167,43 +194,41 @@
             <li>CSV export with fees, net amounts, and check/cash tracking</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128176;</div>
+        <div class="feature-visual feature-shot"><img src="/images/go/feat-gifts.webp?v=2" width="1010" height="640" loading="lazy" alt="Check and cash gifts ready to batch for the finance team"></div>
       </div>
 
       <div class="feature-row reverse">
         <div>
-          <h3>Task Management with Automated Reminders</h3>
+          <h2 class="feature-row-title">Task Management with Automated Reminders</h2>
           <p>Create tasks across 8 categories: preparation, training, documents, fundraising, logistics, packing, spiritual, and other. Assign to one person or the whole team at once.</p>
           <ul>
             <li>Filter by status, category, or person</li>
             <li>Track assigned date, due date, and completed date</li>
             <li>Red overdue indicators so nothing slips</li>
             <li>Daily email reminders for upcoming and overdue tasks</li>
-            <li>Weekly leader digest every Monday morning</li>
           </ul>
         </div>
-        <div class="feature-visual">&#9989;</div>
+        <div class="feature-visual feature-shot"><img src="/images/go/feat-tasks.webp?v=2" width="1010" height="640" loading="lazy" alt="A task list showing how many travelers have finished each task"></div>
       </div>
 
       <div class="feature-row">
         <div>
-          <h3>E-Signatures &amp; Document Management</h3>
+          <h2 class="feature-row-title">E-Signatures &amp; Document Management</h2>
           <p>Upload liability waivers, medical forms, and trip agreements. Participants sign digitally right from the platform: no printing, scanning, or mailing required.</p>
           <ul>
             <li>Built-in PDF viewer with digital signature capture</li>
             <li>Guardian co-signatures for minors (via email link)</li>
-            <li>Full audit trail for legal compliance</li>
+            <li>A record of who signed and when, and a signed copy emailed to each signer</li>
             <li>3-day advance reminders before deadlines</li>
             <li>Automatic overdue notifications</li>
-            <li>Weekly leader summary of missing documents</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128221;</div>
+        <div class="feature-visual"><svg class="mtp-ico" aria-hidden="true" focusable="false"><use href="#i-signature"></use></svg></div>
       </div>
 
       <div class="feature-row reverse">
         <div>
-          <h3>Fundraising Milestones &amp; Progress</h3>
+          <h2 class="feature-row-title">Fundraising Milestones &amp; Progress</h2>
           <p>Set deadline-based milestones (like "50% raised by April 1") and instantly see who is on track. Per-person stoplight indicators make it obvious where to focus.</p>
           <ul>
             <li>Green, yellow, and red status for each participant</li>
@@ -213,12 +238,12 @@
             <li>Support staff excluded from per-person budget calculations</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128200;</div>
+        <div class="feature-visual feature-shot"><img src="/images/go/feat-fundraising.webp" width="1010" height="540" loading="lazy" alt="Each traveler's fundraising goal, amount raised and progress"></div>
       </div>
 
       <div class="feature-row">
         <div>
-          <h3>Budget &amp; Expense Tracking</h3>
+          <h2 class="feature-row-title">Budget &amp; Expense Tracking</h2>
           <p>Track every dollar in and every dollar out. One unified view shows Total Gross, Stripe Fees, Net Received, Checks &amp; Cash, Expenses, and Available Balance.</p>
           <ul>
             <li>Record expenses against funds raised</li>
@@ -227,12 +252,12 @@
             <li>Financial summary cards at a glance</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128176;</div>
+        <div class="feature-visual feature-shot"><img src="/images/go/feat-budget.webp" width="1010" height="540" loading="lazy" alt="A per-person trip budget with each cost multiplied across the team"></div>
       </div>
 
       <div class="feature-row reverse">
         <div>
-          <h3>Donor Portal</h3>
+          <h2 class="feature-row-title">Donor Portal</h2>
           <p>Donors access their giving history through a simple magic link: no password, no account creation. They can download tax receipts, see trip updates, and view prayer requests.</p>
           <ul>
             <li>Magic link authentication (no passwords)</li>
@@ -242,12 +267,12 @@
             <li>Aggregated impact metrics</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128588;</div>
+        <div class="feature-visual"><svg class="mtp-ico" aria-hidden="true" focusable="false"><use href="#i-receipt"></use></svg></div>
       </div>
 
       <div class="feature-row">
         <div>
-          <h3>Trip Itinerary &amp; Logistics</h3>
+          <h2 class="feature-row-title">Trip Itinerary &amp; Logistics</h2>
           <p>Build a day-by-day schedule the whole team can see. Add activities, locations, times, and descriptions. When plans change, update once and everyone is current.</p>
           <ul>
             <li>Day-by-day itinerary builder</li>
@@ -256,12 +281,12 @@
             <li>Visible to all team members</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128197;</div>
+        <div class="feature-visual"><svg class="mtp-ico" aria-hidden="true" focusable="false"><use href="#i-itinerary"></use></svg></div>
       </div>
 
       <div class="feature-row reverse">
         <div>
-          <h3>Team Discipleship</h3>
+          <h2 class="feature-row-title">Team Discipleship</h2>
           <p>A mission trip is more than logistics. Assign reading plans, devotionals, and courses to your team. Track spiritual preparation alongside practical preparation.</p>
           <ul>
             <li>Built-in reading plans (including mission-focused plans)</li>
@@ -270,12 +295,12 @@
             <li>Part of the larger MKDSCPLS discipleship platform</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128214;</div>
+        <div class="feature-visual"><svg class="mtp-ico" aria-hidden="true" focusable="false"><use href="#mtp-book"></use></svg></div>
       </div>
 
       <div class="feature-row">
         <div>
-          <h3>Applications &amp; Team Management</h3>
+          <h2 class="feature-row-title">Applications &amp; Team Management</h2>
           <p>Customizable trip application form with optional auto-approval. Manage participant profiles, emergency contacts, trip roles, and more.</p>
           <ul>
             <li>Public trip application page</li>
@@ -285,7 +310,7 @@
             <li>Support staff and self-funded role designations</li>
           </ul>
         </div>
-        <div class="feature-visual">&#128101;</div>
+        <div class="feature-visual feature-shot"><img src="/images/go/feat-team.webp?v=2" width="1010" height="640" loading="lazy" alt="The team roster with leaders, co-leaders and team members"></div>
       </div>
 
     </div>
@@ -302,7 +327,7 @@
       <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
         <div class="feature-card">
           <h3>Youth Trip to the Dominican Republic</h3>
-          <p>A youth pastor recruits 14 students and 4 adult chaperones. Every student gets an individual donation page with a $2,400 goal. Parents sign waivers and medical forms via email link with guardian co-signature. Task reminders keep students on top of passport renewals, immunizations, and packing lists. The youth pastor's Monday morning leader digest shows exactly who is behind on fundraising so he can intervene before it becomes a crisis.</p>
+          <p>A youth pastor recruits 14 students and 4 adult chaperones. Every student gets an individual donation page with a $2,400 goal. Parents sign waivers and medical forms via email link with guardian co-signature. Task reminders keep students on top of passport renewals, immunizations, and packing lists. The youth pastor can see on the fundraising roster exactly who is behind, and step in before it becomes a crisis.</p>
         </div>
         <div class="feature-card">
           <h3>Church-Wide Trip to Guatemala</h3>
@@ -385,7 +410,7 @@
         <div style="margin-top: 16px; font-size: 0.9rem;">
           <a href="/pricing" style="color: var(--text-muted); margin: 0 8px;">See pricing</a>
           &middot;
-          <a href="/compare" style="color: var(--text-muted); margin: 0 8px;">Software comparison</a>
+          <a href="/compare" style="color: var(--text-muted); margin: 0 8px;">Choosing software</a>
           &middot;
           <a href="/checklist" style="color: var(--text-muted); margin: 0 8px;">Planning checklist</a>
         </div>
@@ -405,7 +430,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="sc-footer">
+  <footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -416,15 +441,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -433,7 +459,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -444,7 +470,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

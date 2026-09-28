@@ -1,8 +1,8 @@
 # Mission Trip Planning: guides, checklists and costs for churches
 
 > Practical, free guides for church missions teams planning a short-term mission
-> trip: step-by-step planning, a full checklist, real cost ranges and a budget
-> calculator, packing lists, fundraising ideas, team recruiting, and how to find
+> trip: step-by-step planning, a month-by-month checklist, real cost ranges,
+> packing lists, fundraising ideas, team recruiting, and how to find
 > and vet a mission partner. Written for gospel centered trips where the
 > spiritual preparation of the team matters as much as the logistics. The
 > optional software behind it is GO by MKDSCPLS, which is free for up to 5 trips
@@ -13,8 +13,9 @@ trip, not while shopping for software.
 
 ## Planning guides
 - [How to plan a mission trip](https://missiontripplanning.com/how-to-plan-a-mission-trip): The full step-by-step process for organizing a church mission trip, from first decision to departure.
-- [Mission trip checklist](https://missiontripplanning.com/checklist): Step-by-step timeline from 12 months out to trip launch. What to prepare and when.
-- [Mission trip budget and cost calculator](https://missiontripplanning.com/budget): What a mission trip actually costs. Real ranges for domestic and international trips, including airfare, lodging, in-country transport, visas, travel insurance, immunizations and tipping, with a calculator to estimate a total group cost.
+- [How to go on a mission trip](https://missiontripplanning.com/how-to-go-on-a-mission-trip): For the person who wants to go, not the organizer. Start with your own church, questions to ask the missions team, what a trip costs, how people raise support, and how to prepare.
+- [Mission trip planning checklist](https://missiontripplanning.com/checklist): A month-by-month timeline from 6 months before the trip through the debrief afterward. What to prepare and when.
+- [Mission trip costs and budget guide](https://missiontripplanning.com/budget): What a mission trip actually costs in 2026. Real per-person ranges for domestic and international trips, including airfare, lodging, in-country transport, visas, travel insurance, immunizations and tipping, and the costs teams forget.
 - [Mission trip packing list](https://missiontripplanning.com/mission-trip-packing-list): What to bring. Documents, clothing, toiletries, ministry materials, health and first aid. Free printable.
 
 ## Funding the trip
@@ -25,10 +26,10 @@ trip, not while shopping for software.
 - [Church mission partners](https://missiontripplanning.com/church-mission-partners): How churches find, vet and work with reliable international mission trip partners and in-country hosts, and what to ask before committing a team.
 
 ## Choosing software, if you need it
-- [Compare mission trip management software](https://missiontripplanning.com/compare): How GO compares with other mission trip management platforms, including Managed Missions and ServiceReef. Features, pricing and platform fees.
+- [How to choose mission trip software](https://missiontripplanning.com/compare): Six questions to ask before your church picks a tool (gifts and fees, forms and minors, team connection, cost, phones, getting your data out), with where GO stands and what it does not do.
 - [Features](https://missiontripplanning.com/features): Trip management, fundraising, donor tracking, applications, e-signatures.
 - [Pricing](https://missiontripplanning.com/pricing): Free for up to 5 trips and offline giving. No platform fee at any tier.
-- [Home](https://missiontripplanning.com/): What mission trip planning software does and why the base plan is free.
+- [Home](https://missiontripplanning.com/): What GO does for a church trip (applications, team roster, gifts, online waivers, tasks and reminders), what it does not do, and pricing.
 
 ## Get started
 - [What setting up a trip involves](https://missiontripplanning.com/start): The three steps of moving a trip onto GO, what the free plan covers (5 trips, offline giving, no platform fee on donations at any tier), when a church would pay, and when the software is not worth it for a single small trip.

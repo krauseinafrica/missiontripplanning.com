@@ -22,15 +22,37 @@
   <meta name="twitter:description" content="30 proven mission trip fundraising ideas for churches and teams: support letters, events, product sales, online campaigns, and church partnerships.">
   <meta name="twitter:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Schema.org Article -->
@@ -47,7 +69,7 @@
       "url": "https://go.mkdscpls.com"
     },
     "datePublished": "2026-06-19",
-    "dateModified": "2026-06-19",
+    "dateModified": "2026-09-27",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://missiontripplanning.com/mission-trip-fundraising-ideas"
@@ -83,19 +105,29 @@
       },
       {
         "@type": "Question",
+        "name": "How do I write a fundraising letter for a mission trip?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Keep it to one page. Say where you are going and when, what the team will do and who it serves, why you are going, the amount you need and the date you need it by, and exactly how to give. Ask for prayer as well as money, and add a handwritten line to people you know well. The support letter guide has full templates." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use GoFundMe for a mission trip?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Usually not. A gift to a personal crowdfunding campaign is not a gift to your church, so givers get no tax receipt from the church, fees come out of the total, and the church has no record of who gave. Give through your church's trip fund instead, online if it offers that." }
+      },
+      {
+        "@type": "Question",
         "name": "How do online mission trip donation pages work?",
         "acceptedAnswer": { "@type": "Answer", "text": "Each team member gets a personal page with their photo, story, and goal. Supporters give by card or bank transfer, the donation is credited toward that person's goal, and team-wide gifts are split automatically across members. Purpose-built platforms handle the split penny-accurately and issue receipts, which removes the spreadsheet errors that cost churches money." }
       }
     ]
   }
   </script>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -135,9 +167,9 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">Free Fundraising Guide</div>
+      <div class="hero-badge">Fundraising Guide</div>
       <h1>Mission Trip Fundraising Ideas: 30 Ways to Fund Your Trip</h1>
-      <p>Thirty practical ways for church teams to raise mission trip support: from the support letter that does most of the work to events, product sales, and online campaigns that engage your whole community. This guide is about <em>how to raise the money</em>; for what a trip actually costs, see the <a href="/budget" style="color: #fff; text-decoration: underline;">budget guide</a>.</p>
+      <p>How to raise money for a mission trip: thirty practical ways for church teams to raise support, from the support letter that does most of the work to events, product sales, and online campaigns that engage your whole community. This guide is about <em>how to raise the money</em>; for what a trip actually costs, see the <a href="/budget" style="color: var(--go-green); text-decoration: underline; font-weight: 600;">budget guide</a>.</p>
     </div>
   </section>
 
@@ -257,6 +289,42 @@
     </div>
   </section>
 
+  <!-- What usually does not work -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2>Be Honest About What Does Not Work</h2>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 16px;">Some ideas on this list take far more effort than they return. They can still be worth doing for other reasons, but count the cost before you commit a team's Saturdays to them.</p>
+        <ul style="color: var(--text-secondary); line-height: 1.9; margin-top: 16px; padding-left: 22px;">
+          <li><strong>Car washes and bake sales</strong> are good for team spirit and poor for the budget. Hours of work raise a modest sum, often from people who would have given anyway if asked directly. A Saturday shift at a regular job, donated, usually raises more.</li>
+          <li><strong>Restaurant nights</strong> are a pleasant social evening with a small donation attached. Treat them that way, not as a plan to fund a trip.</li>
+          <li><strong>Large auctions</strong> can raise real money, but gathering items and running the night usually costs more time than a few direct asks would. Only take one on if someone who has run auctions before is leading it.</li>
+          <li><strong>Personal crowdfunding pages</strong> such as GoFundMe take a fee, give no church receipt, and send gifts around your church rather than through it. Give through the church's trip fund instead.</li>
+        </ul>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 16px;">How you raise the money also shapes the team. A plan built mostly on events teaches people that ministry is hustle. A plan built on honest, personal asks teaches them to speak about their calling, to receive help, and to trust God through his people. Both can fund a trip; only one of them forms the team while it does.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section section-alt">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2>A Fundraising Timeline That Works</h2>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 16px;">For a trip about six months away, this order puts the effort where the money is:</p>
+        <ul style="color: var(--text-secondary); line-height: 1.9; margin-top: 16px; padding-left: 22px;">
+          <li><strong>Six months out:</strong> each person makes a list of 50 to 100 names and sends support letters with a link or envelope for giving. Aim to raise a large share in this first month.</li>
+          <li><strong>Five months out:</strong> personal follow-up with everyone who has not replied, and thank-you notes to everyone who has.</li>
+          <li><strong>Four months out:</strong> one church-wide moment, such as a commissioning Sunday with testimonies and a clear ask.</li>
+          <li><strong>Three months out:</strong> face-to-face conversations with the few people who might give a larger gift.</li>
+          <li><strong>Six to eight weeks out:</strong> the fundraising deadline. Look at who is still short and decide together: a matching gift, a scholarship from the missions fund, or more time.</li>
+          <li><strong>After the trip:</strong> a short report with photos to every giver, within two weeks of getting home.</li>
+        </ul>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 16px;">All the way through, keep gifts flowing through the church rather than personal accounts, and pray by name for the people on your list, including the ones who said no.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- The tool -->
   <section class="section">
     <div class="container">
@@ -303,6 +371,14 @@
           <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Is it okay to ask people directly to support a mission trip?</h3>
           <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Yes. You are inviting people to participate in ministry, not begging. Frame the ask around the work being done and the chance to be part of it. Many who give later say they were glad to be invited.</p>
         </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">How do I write a fundraising letter for a mission trip?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Keep it to one page. Say where you are going and when, what the team will do and who it serves, why you are going, the amount you need and the date you need it by, and exactly how to give. Ask for prayer as well as money, and add a handwritten line to people you know well. The <a href="https://go.mkdscpls.com/blog/mission-trip-support-letter" style="color: var(--go-green);">support letter guide</a> has full templates.</p>
+        </div>
+        <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
+          <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Should I use GoFundMe for a mission trip?</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Usually not. A gift to a personal crowdfunding campaign is not a gift to your church, so givers get no tax receipt from the church, fees come out of the total, and the church has no record of who gave. Give through your church's trip fund instead, online if it offers that.</p>
+        </div>
         <div style="padding: 20px 0;">
           <h3 style="font-size: 1.05rem; margin-bottom: 8px;">How do online mission trip donation pages work?</h3>
           <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Each team member gets a personal page with their photo, story, and goal. Supporters give by card or bank transfer, the gift is credited toward that person's goal, and team-wide gifts are split automatically. Purpose-built platforms handle the split penny-accurately and issue receipts.</p>
@@ -312,7 +388,7 @@
   </section>
 
   <!-- Related Resources -->
-  <section class="section">
+  <section class="section" data-nosnippet>
     <div class="container">
       <div class="section-header">
         <h2>Related Resources</h2>
@@ -327,9 +403,9 @@
           <h3>Mission Trip Budget Guide</h3>
           <p>What a trip actually costs per person, by destination, with hidden costs.</p>
         </a>
-        <a href="/mission-trip-packing-list" class="feature-card" style="text-decoration: none;">
-          <h3>Mission Trip Packing List</h3>
-          <p>What to physically bring: documents, clothing, ministry materials, and more.</p>
+        <a href="/how-to-go-on-a-mission-trip" class="feature-card" style="text-decoration: none;">
+          <h3>How to Go on a Mission Trip</h3>
+          <p>For the person going: where to start, what it costs, and how to prepare.</p>
         </a>
       </div>
     </div>
@@ -347,7 +423,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="sc-footer">
+  <footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -358,15 +434,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -375,7 +452,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -386,7 +463,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

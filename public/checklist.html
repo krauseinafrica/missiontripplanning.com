@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Trip Planning Checklist: Free 12-Month Timeline (2026)</title>
-  <meta name="description" content="A free mission trip planning checklist for churches. A 12-month timeline covering recruiting, fundraising, passports, insurance, training and packing.">
+  <title>Mission Trip Planning Checklist: Month-by-Month Timeline (2026)</title>
+  <meta name="description" content="A free mission trip planning checklist for churches: month by month from 6 months out through the debrief, from recruiting and passports to packing.">
   <meta name="keywords" content="mission trip planning checklist, mission trip checklist, mission trip timeline, church mission trip planning, mission trip preparation">
   <link rel="canonical" href="https://missiontripplanning.com/checklist">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Mission Trip Planning Checklist: Free 12-Month Timeline (2026)">
-  <meta property="og:description" content="A free mission trip planning checklist for churches. A 12-month timeline covering recruiting, fundraising, passports, insurance, training and packing.">
+  <meta property="og:title" content="Mission Trip Planning Checklist: Month-by-Month Timeline (2026)">
+  <meta property="og:description" content="A free mission trip planning checklist for churches: month by month from 6 months out through the debrief, from recruiting and passports to packing.">
   <meta property="og:url" content="https://missiontripplanning.com/checklist">
   <meta property="og:site_name" content="MissionTripPlanning.com">
   <meta property="og:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
@@ -19,18 +19,40 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Free Mission Trip Planning Checklist: Step-by-Step Timeline (2026)">
-  <meta name="twitter:description" content="Free mission trip planning checklist with step-by-step timeline: from 12 months out to trip launch. Covers fundraising, logistics, team prep, and follow-up.">
+  <meta name="twitter:description" content="Free mission trip planning checklist with step-by-step timeline: from 6 months out to the debrief after you return. Covers fundraising, logistics, team prep, and follow-up.">
   <meta name="twitter:image" content="https://www.mkdscpls.com/images/go-og-default-v6.jpg">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Schema.org Article -->
@@ -119,13 +141,13 @@
       .resources-grid { grid-template-columns: 1fr; }
     }
   </style>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -167,7 +189,7 @@
     <div class="container">
       <div class="hero-badge">Free Planning Resource</div>
       <h1>The Complete Mission Trip Planning Checklist</h1>
-      <p>A timeline-based checklist covering every phase of mission trip planning, from the first leadership meeting to the final debrief. Built from years of real trip experience.</p>
+      <p>A mission trip planning checklist for churches: a month-by-month timeline from 6 months before the trip through the debrief afterward, covering every phase from the first leadership meeting on. Built from years of real trip experience.</p>
       <figure class="fig">
         <figcaption>
           <p class="fig-title">A mission trip planning timeline</p>
@@ -520,7 +542,7 @@
   </section>
 
   <!-- More Resources -->
-  <section class="section">
+  <section class="section" data-nosnippet>
     <div class="container">
       <div class="section-header">
         <h2>More Resources</h2>
@@ -543,7 +565,7 @@
   <!-- Footer -->
   
     <p style="margin:1.4rem 0;padding:0.9rem 1.1rem;background:#f4f7f5;border-left:3px solid #789078;border-radius:0 8px 8px 0;font-size:0.95rem;color:#374151;">Wondering what it takes to run this trip on software instead of a spreadsheet? <a href="/start" style="color:#2B6B5F;font-weight:700;">See what setting up a trip involves</a>, including what the free plan covers and when it is not worth it.</p>
-<footer class="sc-footer">
+<footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -554,15 +576,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -571,7 +594,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -582,7 +605,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

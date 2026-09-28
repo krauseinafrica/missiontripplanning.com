@@ -2,12 +2,12 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --go-green: #00875A;
-  --go-green-dark: #006644;
-  --go-green-light: #E3FCEF;
+  --go-green: #2B6B5F;
+  --go-green-dark: #1e4d43;
+  --go-green-light: #e8f3ef;
   --text-primary: #1a1a2e;
   --text-secondary: #555;
-  --text-muted: #888;
+  --text-muted: #737373; /* #888 failed WCAG AA on white and on --bg-light */
   --bg-white: #ffffff;
   --bg-light: #f8faf9;
   --bg-dark: #0d1117;
@@ -163,9 +163,9 @@ img { max-width: 100%; height: auto; }
   font-size: 1.05rem;
   font-weight: 600;
   transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(0,135,90,0.3);
+  box-shadow: 0 2px 8px rgba(43, 107, 95,0.3);
 }
-.hero-cta:hover { background: var(--go-green-dark); color: white; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,135,90,0.35); }
+.hero-cta:hover { background: var(--go-green-dark); color: white; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(43, 107, 95,0.35); }
 
 .hero-secondary {
   display: inline-block;
@@ -233,7 +233,9 @@ img { max-width: 100%; height: auto; }
   justify-content: center;
   font-size: 1.3rem;
   margin-bottom: 16px;
+  color: var(--go-green);
 }
+.feature-icon .mtp-ico { width: 24px; height: 24px; }
 
 .feature-card h3 {
   font-size: 1.05rem;
@@ -290,7 +292,7 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.05em;
 }
 
-.pricing-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
+.pricing-card h3, .pricing-card .pricing-card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
 
 .pricing-price {
   font-size: 2.5rem;
@@ -439,7 +441,7 @@ img { max-width: 100%; height: auto; }
   .feature-row, .feature-row.reverse { grid-template-columns: 1fr; direction: ltr; gap: 24px; }
 }
 
-.feature-row h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
+.feature-row h3, .feature-row .feature-row-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
 .feature-row p { color: var(--text-secondary); line-height: 1.7; }
 .feature-row ul { list-style: none; margin-top: 16px; }
 .feature-row ul li {
@@ -463,7 +465,9 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  color: var(--go-green);
 }
+.feature-visual .mtp-ico { width: 72px; height: 72px; }
 
 /* Comparison table */
 .comparison-table {
@@ -581,7 +585,7 @@ img { max-width: 100%; height: auto; }
    runs to the high end of the range; the solid one sits on top and stops at
    the low end, which is what gives the bar its two-tone tip. */
 .fig-fill-hi {
-  background: rgba(0, 135, 90, 0.26);
+  background: rgba(43, 107, 95, 0.26);
 }
 
 .fig-fill {
@@ -801,3 +805,10 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 640px) {
   .spot { max-width: 280px; }
 }
+
+/* Accessibility (27 Sep 2026). Links inside running text are underlined so they
+   do not rely on colour alone; the green was 1.2:1 against the body text. */
+p a:not([class]) { text-decoration: underline; }
+p.mp-more a { text-decoration: none; }
+/* The brand line in the dark footer: the page green was 3:1 on the footer. */
+.sc-footer-brand p a { color: #378979; text-decoration: underline; }

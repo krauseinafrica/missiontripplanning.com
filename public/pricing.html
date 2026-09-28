@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Trip Software Pricing: Free Plan Available | No Platform Fees</title>
+  <title>Mission Trip Software Pricing: Free for 5 Trips, No Fees</title>
   <meta name="description" content="Plan your church mission trip free for up to 5 trips. No platform fee on donations at any tier. Pay only when you take card donations online.">
   <meta name="keywords" content="mission trip software pricing, church mission trip tools cost, mission trip management software free">
   <link rel="canonical" href="https://missiontripplanning.com/pricing">
@@ -13,15 +13,37 @@
   <meta property="og:description" content="Plan your church mission trip free for up to 5 trips. No platform fee on donations at any tier. Pay only when you take card donations online.">
   <meta property="og:url" content="https://missiontripplanning.com/pricing">
 
-  <link rel="stylesheet" href="/styles.css?v=20260914a">
+  <link rel="icon" href="/favicon.ico?v=go1" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=go1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
+  <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T4WD3D6CYK');
+    // The tag itself costs ~0.7s of main thread on a phone, so it loads after the
+    // page has loaded, on the first interaction or ~3.5s later. The calls above
+    // wait in dataLayer until then, so the page view is still recorded.
+    (function () {
+      var done = false, evs = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'mousemove'];
+      function run() {
+        if (done) return;
+        done = true;
+        evs.forEach(function (e) { removeEventListener(e, run, true); });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T4WD3D6CYK';
+        document.head.appendChild(s);
+      }
+      function arm() {
+        evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
+        setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
+      }
+      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+    })();
   </script>
 
   <!-- Schema.org Product + Offers -->
@@ -76,17 +98,17 @@
       {
         "@type": "Question",
         "name": "Is there a free trial?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The Free plan is not a trial. It is free forever. It covers up to 5 active trips with task checklists, manual payment tracking, and help center access with no credit card required and no time limit. When you need online donations or e-signatures, you can upgrade to Starter ($9/month) or Ministry ($39/month)." }
+        "acceptedAnswer": { "@type": "Answer", "text": "The Free plan is not a trial. It is free forever. It covers up to 5 active trips, and it includes team announcements, meetings, e-signatures with a signed copy emailed to the signer, and automated reminders, with no credit card required and no time limit. When you want to take gifts online, upgrade to Starter ($9/month); for unlimited trips, templates and the full set of team reading plans, Ministry ($39/month)." }
       },
       {
         "@type": "Question",
         "name": "What is included in the free plan?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Up to 5 active trips, basic task checklists, manual payment tracking (record cash and checks without online donations), 250 MB storage per trip, and help center access. Free plan users can manage participants, assign tasks, build itineraries, and track fundraising manually, enough for a church running one or two trips a year." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Up to 5 active trips, 250 MB storage per trip, and help center access. You can manage applications and participants, assign tasks, send team announcements by email, schedule meetings, collect e-signatures on waivers and forms (with guardian co-signing for minors), build itineraries, record cash and check gifts or import them from a spreadsheet, and share a public trip page. Automated task, payment and document reminders are included." }
       },
       {
         "@type": "Question",
         "name": "Can I switch plans?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Upgrade or downgrade anytime. Start on Free, move to Starter when you want online donations, move to Ministry when you want unlimited trips and e-signatures. No contracts, no cancellation fees." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Upgrade or downgrade anytime. Start on Free, move to Starter when you want online donations, move to Ministry when you want unlimited trips, trip templates and every team reading plan. No contracts, no cancellation fees." }
       },
       {
         "@type": "Question",
@@ -106,13 +128,21 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/site-chrome.css?v=20260916a">
+  <link rel="stylesheet" href="/site-chrome.css?v=20260927lh">
+  <style>
+    .every-plan { max-width: 960px; margin: 48px auto 0; padding: 28px 32px; background: var(--bg-light, #f7faf9); border: 1px solid var(--border, #e2e8f0); border-radius: 16px; }
+    .every-plan h2 { font-size: 1.35rem; margin: 0 0 16px; text-align: center; }
+    .every-plan ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 40px; }
+    .every-plan li { break-inside: avoid; padding: 6px 0 6px 26px; position: relative; color: var(--text-secondary, #475569); line-height: 1.5; }
+    .every-plan li::before { content: ""; position: absolute; left: 4px; top: 12px; width: 10px; height: 6px; border-left: 2px solid var(--go-green, #2B6B5F); border-bottom: 2px solid var(--go-green, #2B6B5F); transform: rotate(-45deg); }
+    @media (max-width: 700px) { .every-plan { padding: 22px 18px; } .every-plan ul { columns: 1; } }
+  </style>
   <style>
     /* GO's palette, driven through the shared chrome's custom properties. */
     :root {
-      --sc-brand: #00875A;
-      --sc-brand-dark: #006644;
-      --sc-accent: #00875A;
+      --sc-brand: #2B6B5F;
+      --sc-brand-dark: #1e4d43;
+      --sc-accent: #2B6B5F;
       --sc-accent-ink: #ffffff;
       --sc-footer-bg: #0d1117;
     }
@@ -165,7 +195,7 @@
           Church software pricing is often designed to confuse: setup fees, per-user charges, mandatory support packages, platform fees that quietly skim 2-3% off every donation. We wanted the opposite: three plans, clear limits, no fees on donations, cancel anytime.
         </p>
         <p style="color: var(--text-secondary); line-height: 1.8;">
-          If your church is running one or two trips a year and you are fine collecting checks by hand, the <strong>Free plan</strong> actually covers that. If you want to accept online donations and collect digital signatures, <strong>Starter</strong> is $9/month. If you are running an active missions program with multiple trips a year, <strong>Ministry</strong> is $39/month. That is the entire decision tree.
+          If your church is running one or two trips a year and you are fine collecting checks by hand, the <strong>Free plan</strong> actually covers that. If you want to accept online donations, <strong>Starter</strong> is $9/month. If you are running an active missions program with multiple trips a year, <strong>Ministry</strong> is $39/month. That is the entire decision tree.
         </p>
         <p style="color: var(--text-secondary); line-height: 1.8;">
           New to this? Start with our <a href="/how-to-plan-a-mission-trip" style="color: var(--go-green);">step-by-step guide to planning a mission trip</a> to see where the software fits into the bigger process.
@@ -181,14 +211,14 @@
 
         <!-- Free -->
         <div class="pricing-card">
-          <h3>Free</h3>
+          <h2 class="pricing-card-title">Free</h2>
           <p style="color: var(--text-muted); font-size: 0.9rem;">For churches getting started</p>
           <div class="pricing-price">$0<span>/mo</span></div>
           <div class="pricing-period">Free forever</div>
           <ul class="pricing-features">
             <li>Up to 5 active trips</li>
-            <li>Basic task checklists</li>
-            <li>Manual payment tracking</li>
+            <li>Everything in the list below</li>
+            <li>Record cash and check gifts</li>
             <li>250 MB storage per trip</li>
             <li>Help center access</li>
           </ul>
@@ -197,15 +227,15 @@
 
         <!-- Starter -->
         <div class="pricing-card">
-          <h3>Starter</h3>
+          <h2 class="pricing-card-title">Starter</h2>
           <p style="color: var(--text-muted); font-size: 0.9rem;">For churches running trips</p>
           <div class="pricing-price">$9<span>/mo</span></div>
           <div class="pricing-period">or $90/year (save 17%)</div>
           <ul class="pricing-features">
             <li>Up to 5 active trips</li>
+            <li>Everything in Free</li>
             <li>Online donations (0% platform fee)</li>
-            <li>Team communication</li>
-            <li>1 signable document (e-signature)</li>
+            <li>Post up to 5 mission partner opportunities</li>
             <li>1 GB storage per trip</li>
             <li>Standard support (5 business days)</li>
           </ul>
@@ -215,24 +245,48 @@
         <!-- Ministry -->
         <div class="pricing-card featured">
           <div class="pricing-badge">Best Value</div>
-          <h3>Ministry</h3>
+          <h2 class="pricing-card-title">Ministry</h2>
           <p style="color: var(--text-muted); font-size: 0.9rem;">For active missions programs</p>
           <div class="pricing-price">$39<span>/mo</span></div>
           <div class="pricing-period">or $390/year (save 17%)</div>
           <ul class="pricing-features">
             <li>Unlimited trips</li>
-            <li>Online donations (0% platform fee)</li>
-            <li>Team communication</li>
-            <li>Unlimited e-signatures</li>
-            <li>Advanced task management</li>
-            <li>Meeting scheduler</li>
+            <li>Everything in Starter</li>
+            <li>Trip templates: start the next trip from the last one</li>
+            <li>Plan the budget before the team signs up</li>
+            <li>Every team reading plan</li>
+            <li>Leader-only tasks</li>
             <li>Photo gallery</li>
+            <li>Unlimited mission partner opportunities</li>
+            <li>Your church's colors in GO</li>
             <li>5 GB storage per trip</li>
             <li>Priority support (24 hours)</li>
           </ul>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=pricing_ministry" class="pricing-btn primary">Start with Ministry</a>
         </div>
 
+      </div>
+
+      <div class="every-plan">
+        <h2>Every plan includes</h2>
+        <ul>
+          <li>Applications, invite links and your team roster</li>
+          <li>Team announcements, emailed to everyone</li>
+          <li>Team meetings</li>
+          <li>Tasks, with automated reminders</li>
+          <li>E-signatures on waivers and forms, with a signed copy emailed to the signer</li>
+          <li>Parent or guardian co-signing for minors</li>
+          <li>One info sheet per traveler that ticks off the tasks asking for it</li>
+          <li>Day-by-day itineraries</li>
+          <li>Payment tracking and reminders</li>
+          <li>Import gifts from a spreadsheet, and undo an import</li>
+          <li>Split gifts to the whole team across travelers' budgets</li>
+          <li>Send donors to your church's own giving page if you prefer</li>
+          <li>A public page for each trip, with an "I'm interested" button</li>
+          <li>Ask travel providers for quotes from inside the trip</li>
+          <li>Your list of mission partners</li>
+          <li>The Sent Ones team reading plan</li>
+        </ul>
       </div>
 
     </div>
@@ -251,10 +305,10 @@
           Most "free" software is a time-limited trial or a stripped-down preview designed to push you to upgrade. GO's Free plan is a real plan. No credit card. No 30-day countdown. No locked features hidden behind a paywall you hit on day one.
         </p>
         <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
-          On the Free plan you can create up to <strong>5 active trips</strong>, build full task checklists across 8 categories, manage participants and applications, assign tasks to individuals or the whole team, track fundraising manually by recording cash and check payments, build day-by-day itineraries, and keep everything in 250 MB of storage per trip. The help center is open to you forever.
+          On the Free plan you can create up to <strong>5 active trips</strong>, take applications, assign tasks to individuals or the whole team with automated reminders, email announcements to the team, collect e-signatures on waivers and forms, build day-by-day itineraries, record cash and check gifts or import them from a spreadsheet, and keep everything in 250 MB of storage per trip. The help center is open to you forever.
         </p>
         <p style="color: var(--text-secondary); line-height: 1.8;">
-          What the Free plan <em>doesn't</em> include: online donation processing, e-signatures, and automated reminders. If you are collecting checks by hand and printing waivers, the Free plan is enough. When you want Stripe donations and digital signatures, move up to Starter.
+          What the Free plan <em>doesn't</em> include: online donation processing. If your gifts come in as checks and cash, the Free plan is enough. When you want donors to give online by card or bank transfer, move up to Starter.
         </p>
       </div>
     </div>
@@ -274,7 +328,7 @@
           <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px; margin-top: 12px;">
             <li>You run 1-2 trips per year</li>
             <li>Most of your donations come as checks or cash</li>
-            <li>You are fine printing waivers and collecting paper signatures</li>
+            <li>You want waivers signed online without paying for it</li>
             <li>You want to try the platform without any commitment</li>
           </ul>
         </div>
@@ -282,17 +336,16 @@
           <h3>Starter is right for you if...</h3>
           <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px; margin-top: 12px;">
             <li>You want to accept online donations with zero platform fees</li>
-            <li>You need at least one e-signature document (typically a waiver)</li>
             <li>You run a handful of trips per year</li>
-            <li>You want automated task reminders</li>
+            <li>You want to post opportunities with your mission partners</li>
           </ul>
         </div>
         <div class="feature-card">
           <h3>Ministry is right for you if...</h3>
           <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px; margin-top: 12px;">
-            <li>You run an active missions program with multiple trips a year</li>
-            <li>You need unlimited e-signatures (waivers, medical forms, agreements)</li>
-            <li>You want advanced task management and a photo gallery</li>
+            <li>You run an active missions program with more than 5 trips at a time</li>
+            <li>You want to start each trip from a template instead of from scratch</li>
+            <li>You want every team reading plan, a photo gallery and leader-only tasks</li>
             <li>You want priority support with a 24-hour response time</li>
           </ul>
         </div>
@@ -345,15 +398,15 @@
         </div>
         <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
           <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Is there a free trial?</h3>
-          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">The Free plan is not a trial. It is free forever. It covers up to 5 active trips with task checklists, manual payment tracking, and help center access with no credit card required and no time limit. When you need online donations or e-signatures, you can upgrade to Starter ($9/month) or Ministry ($39/month).</p>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">The Free plan is not a trial. It is free forever. It covers up to 5 active trips, and it includes team announcements, meetings, e-signatures with a signed copy emailed to the signer, and automated reminders, with no credit card required and no time limit. When you want to take gifts online, upgrade to Starter ($9/month); for unlimited trips, templates and the full set of team reading plans, Ministry ($39/month).</p>
         </div>
         <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
           <h3 style="font-size: 1.05rem; margin-bottom: 8px;">What is included in the free plan?</h3>
-          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Up to 5 active trips, basic task checklists, manual payment tracking (record cash and checks without online donations), 250 MB storage per trip, and help center access. Free plan users can manage participants, assign tasks, build itineraries, and track fundraising manually, enough for a church running one or two trips a year.</p>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Up to 5 active trips, 250 MB storage per trip, and help center access. You can manage applications and participants, assign tasks, send team announcements by email, schedule meetings, collect e-signatures on waivers and forms (with guardian co-signing for minors), build itineraries, record cash and check gifts or import them from a spreadsheet, and share a public trip page. Automated task, payment and document reminders are included.</p>
         </div>
         <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
           <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Can I switch plans?</h3>
-          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Yes. Upgrade or downgrade anytime. Start on Free, move to Starter when you want online donations, move to Ministry when you want unlimited trips and e-signatures. No contracts, no cancellation fees.</p>
+          <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">Yes. Upgrade or downgrade anytime. Start on Free, move to Starter when you want online donations, move to Ministry when you want unlimited trips, trip templates and every team reading plan. No contracts, no cancellation fees.</p>
         </div>
         <div style="border-bottom: 1px solid var(--border); padding: 20px 0;">
           <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Are there church-size limits or participant caps?</h3>
@@ -399,7 +452,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="sc-footer">
+  <footer class="sc-footer" data-nosnippet>
     <div class="sc-footer-inner">
       <div class="sc-footer-brand">
         <a href="/" class="sc-footer-mark">
@@ -410,15 +463,16 @@
       </div>
       <div class="sc-footer-cols">
         <div class="sc-footer-col">
-          <h4>Product</h4>
+          <h2 class="sc-footer-heading">Product</h2>
           <a href="/features" class="sc-flink">Features</a>
           <a href="/pricing" class="sc-flink">Pricing</a>
-          <a href="/compare" class="sc-flink">Software comparison</a>
+          <a href="/compare" class="sc-flink">Choosing software</a>
           <a href="https://go.mkdscpls.com/blog?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_blog" class="sc-flink">Blog</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Guides</h4>
+          <h2 class="sc-footer-heading">Guides</h2>
           <a href="/how-to-plan-a-mission-trip" class="sc-flink">How to plan a trip</a>
+          <a href="/how-to-go-on-a-mission-trip" class="sc-flink">Going on a trip</a>
           <a href="/checklist" class="sc-flink">Planning checklist</a>
           <a href="/budget" class="sc-flink">Budget guide</a>
           <a href="/mission-trip-fundraising-ideas" class="sc-flink">Fundraising ideas</a>
@@ -427,7 +481,7 @@
             <a href="/church-mission-partners" class="sc-flink">Mission partners</a>
         </div>
         <div class="sc-footer-col">
-          <h4>Get started</h4>
+          <h2 class="sc-footer-heading">Get started</h2>
           <a href="https://go.mkdscpls.com/get-started?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_getstarted" class="sc-flink">Create an account</a>
           <a href="https://go.mkdscpls.com/login?utm_source=missiontripplanning&amp;utm_medium=referral&amp;utm_campaign=go_landing&amp;utm_content=footer_login" class="sc-flink">Sign in</a>
         </div>
@@ -438,7 +492,7 @@
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260916a"></script>
+  <script src="/site-chrome.js?v=20260927lh"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

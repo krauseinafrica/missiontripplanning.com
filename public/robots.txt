@@ -1,3 +1,8 @@
+# Content signals: search=yes lets search engines index and link to these pages;
+# ai-input=yes lets AI tools use them to answer a question, with a link back;
+# ai-train=no asks that they not be used to train AI models.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 Sitemap: https://missiontripplanning.com/sitemap.xml
