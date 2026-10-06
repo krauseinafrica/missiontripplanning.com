@@ -27,6 +27,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=go1">
   <link rel="stylesheet" href="/styles.css?v=20260927lh">
 
+  <!-- Analytics only with the visitor's consent, never with Global Privacy Control (6 Oct 2026) -->
+  <script src="/privacy-consent.js?v=20261006a"></script>
   <!-- Google Analytics -->
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -51,7 +53,7 @@
         evs.forEach(function (e) { addEventListener(e, run, { capture: true, passive: true }); });
         setTimeout(function () { window.requestIdleCallback ? requestIdleCallback(run, { timeout: 2000 }) : run(); }, 3500);
       }
-      if (document.readyState === 'complete') arm(); else addEventListener('load', arm);
+      if (window.mkConsent) mkConsent.onGranted(function () { if (document.readyState === 'complete') arm(); else addEventListener('load', arm); });
     })();
   </script>
 
@@ -397,11 +399,11 @@
       </div>
     </div>
     <div class="sc-footer-base">
-      <p>&copy; 2026 GO by MKDSCPLS. All rights reserved.</p>
+      <p>&copy; 2026 GO by MKDSCPLS. All rights reserved. <a href="https://www.mkdscpls.com/privacy-policy.html" class="sc-flink">Privacy</a> &middot; <a href="/privacy-choices" class="sc-flink">Your Privacy Choices</a></p>
     </div>
   </footer>
 
-  <script src="/site-chrome.js?v=20260927lh"></script>
+  <script src="/site-chrome.js?v=20261006pc"></script>
 <script src="/conversion.js?v=20260916a" defer></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+/var/www/discipleship-platform/public/js/privacy-consent.js
