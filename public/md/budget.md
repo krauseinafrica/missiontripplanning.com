@@ -1,6 +1,6 @@
-# Mission Trip Costs in 2026: A Budget Guide for Churches
+# How Much Does a Mission Trip Cost? 2026 Per-Person Ranges
 
-> What a mission trip really costs in 2026: per-person ranges for domestic and international trips, plus visas, insurance, tipping and the costs teams forget.
+> Church teams pay $500 to $1,500 per person in the US and $1,500 to $5,000 abroad for a 7 to 10 day trip. See costs by region and what teams forget.
 
 Source: https://missiontripplanning.com/budget
 
